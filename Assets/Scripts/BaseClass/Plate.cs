@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class Plate:MonoBehaviour//地块情况
+public class Plate:MonoBehaviour//地块情况
 {
     
     string objectName;//读取所在板块名字，为后续搜索表格进行匹配

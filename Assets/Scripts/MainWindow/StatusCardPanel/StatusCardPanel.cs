@@ -18,7 +18,6 @@ public class StatusCardPanel : MonoBehaviour
     public List<GameObject> countries;
     public int count = 0;
 
-
     void Start()
     {
         country=SelectPanel.Instance.country;
@@ -45,11 +44,11 @@ public class StatusCardPanel : MonoBehaviour
         countries.Add(country5);
 
         IntializeStatusCardPanel();
+        UpdateStatusCardPanel();
     }
 
     void OnEnable()
     {
-        // 每次启用StatusCardPanel时调用
         UpdateStatusCardPanel();
     }
     public void IntializeStatusCardPanel()
@@ -188,6 +187,6 @@ public class StatusCardPanel : MonoBehaviour
     public void onclick_BackButton()
     {
         gameObject.SetActive(false);
-        this.GetComponentInParent<Canvas>().transform.Find("AmericanPlayPanel").gameObject.SetActive(true);
+        this.GetComponentInParent<Canvas>().transform.Find("PlayPanel").gameObject.SetActive(true);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Card6303 : Card
 {
     // Start is called before the first frame update
-    void Start()
+    public Card6303()
     {
         id = 6302;
         cardName = "空中堡垒";
@@ -19,6 +19,11 @@ public class Card6303 : Card
         takeActionOfScore = false;//是否在计分回合执行
         takeActionOfGetCard = false;//是否在摸牌回合执行
         takeActionOfThrowCard = false;//是否在弃牌牌回合执行
+        imagePath = "Art/Cards/600/6303";
+    }
+    void Start()
+    {
+
 
     }
 

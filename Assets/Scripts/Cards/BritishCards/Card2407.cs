@@ -7,7 +7,7 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 public class Card2407 : Card
 {
     // Start is called before the first frame update
-    void Start()
+    public Card2407()
     {
         id = 2407;
         cardName = "皇家空军";
@@ -22,6 +22,10 @@ public class Card2407 : Card
         takeActionOfGetCard = false;//是否在摸牌回合执行
         takeActionOfThrowCard = false;//是否在弃牌牌回合执行
         imagePath = "Art/Cards/200/2407";
+    }
+    void Start()
+    {
+
 
     }
 

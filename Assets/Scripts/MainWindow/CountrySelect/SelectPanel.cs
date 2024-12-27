@@ -123,7 +123,7 @@ public class SelectPanel : MonoBehaviour
         if (country != "NULL")
         {
             //SceneManager.LoadScene("main");
-            this.GetComponentInParent<Canvas>().transform.Find("AmericanPlayPanel").gameObject.SetActive(true);
+            this.GetComponentInParent<Canvas>().transform.Find("PlayPanel").gameObject.SetActive(true);
             this.gameObject.SetActive(false);
         }
         else

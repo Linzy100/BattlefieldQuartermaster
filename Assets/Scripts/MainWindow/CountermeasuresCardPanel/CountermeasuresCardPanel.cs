@@ -98,6 +98,6 @@ public class CountermeasuresCardPanel : MonoBehaviour
     public void onclick_BackButton()
     {
         gameObject.SetActive(false);
-        this.GetComponentInParent<Canvas>().transform.Find("AmericanPlayPanel").gameObject.SetActive(true);
+        this.GetComponentInParent<Canvas>().transform.Find("PlayPanel").gameObject.SetActive(true);
     }
 }

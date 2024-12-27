@@ -5,7 +5,7 @@ using UnityEngine;
 public class Card6209 : Card
 {
     // Start is called before the first frame update
-    void Start()
+    public Card6209()
     {
         id = 6209;
         cardName = "战区移动";
@@ -20,7 +20,9 @@ public class Card6209 : Card
         takeActionOfGetCard = false;//是否在摸牌回合执行
         takeActionOfThrowCard = false;//是否在弃牌牌回合执行
         imagePath = "Art/Cards/600/6209";
-
+    }
+    void Start()
+    {
 
     }
 

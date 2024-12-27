@@ -7,7 +7,7 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 public class Card2304 : Card
 {
     // Start is called before the first frame update
-    void Start()
+    public Card2304()
     {
         id = 2304;
         cardName = "反法西斯抵抗运动";
@@ -22,6 +22,10 @@ public class Card2304 : Card
         takeActionOfGetCard = false;//是否在摸牌回合执行
         takeActionOfThrowCard = false;//是否在弃牌牌回合执行
         imagePath = "Art/Cards/200/2304";
+    }
+    void Start()
+    {
+
 
     }
 

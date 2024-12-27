@@ -7,7 +7,7 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 public class Card2402 : Card
 {
     // Start is called before the first frame update
-    void Start()
+    public Card2402()
     {
         id = 2402;
         cardName = "破译恩尼格玛密码";
@@ -22,6 +22,10 @@ public class Card2402 : Card
         takeActionOfGetCard = false;//是否在摸牌回合执行
         takeActionOfThrowCard = false;//是否在弃牌牌回合执行
         imagePath = "Art/Cards/200/2402";
+    }
+    void Start()
+    {
+
 
     }
 
