@@ -1,0 +1,525 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c86147a14ae8b4fa56dc93abd31886, type: 3}
+  m_Name: PlateTable
+  m_EditorClassIdentifier: 
+  plateDatas:
+  - <plateId>k__BackingField: 0
+    <plateName>k__BackingField: Canada
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 1
+    <plateName>k__BackingField: America
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: America
+    <takeStatuByCampus>k__BackingField: Allies
+    <isAlliesSupply>k__BackingField: 1
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 1
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 2
+    <plateName>k__BackingField: SoutheastPacific
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 3
+    <plateName>k__BackingField: NorthAtlantic
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 4
+    <plateName>k__BackingField: LatinAmerica
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 5
+    <plateName>k__BackingField: Iceland
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 6
+    <plateName>k__BackingField: BritishIsles
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: UnitedKingdom
+    <takeStatuByCampus>k__BackingField: Allies
+    <isAlliesSupply>k__BackingField: 1
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 1
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 7
+    <plateName>k__BackingField: NorthSea
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 8
+    <plateName>k__BackingField: MidAtlantic
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 9
+    <plateName>k__BackingField: SouthAtlantic
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 10
+    <plateName>k__BackingField: WesternEurope
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 11
+    <plateName>k__BackingField: NorthernAfrica
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 12
+    <plateName>k__BackingField: SouthernAfrica
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 13
+    <plateName>k__BackingField: Scandinavia
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 1
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 14
+    <plateName>k__BackingField: BalticSea
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 15
+    <plateName>k__BackingField: Germanic
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: German
+    <takeStatuByCampus>k__BackingField: Axis
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 1
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 1
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 16
+    <plateName>k__BackingField: Italy
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 17
+    <plateName>k__BackingField: EasternMediterranean
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 18
+    <plateName>k__BackingField: RossRegion
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 19
+    <plateName>k__BackingField: 'EasternEurope '
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 20
+    <plateName>k__BackingField: Ukraine
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 21
+    <plateName>k__BackingField: Moscow
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: Soviet
+    <takeStatuByCampus>k__BackingField: Allies
+    <isAlliesSupply>k__BackingField: 1
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 1
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 22
+    <plateName>k__BackingField: Balkan
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 23
+    <plateName>k__BackingField: BlackSea
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 24
+    <plateName>k__BackingField: MiddleEast
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 25
+    <plateName>k__BackingField: ArabianSea
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 26
+    <plateName>k__BackingField: Madagascar
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 27
+    <plateName>k__BackingField: IndianOcean
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 28
+    <plateName>k__BackingField: Siberia
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 29
+    <plateName>k__BackingField: Kazakhstan
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 30
+    <plateName>k__BackingField: MongolianRegion
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 31
+    <plateName>k__BackingField: WesternChina
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 32
+    <plateName>k__BackingField: EasternChina
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: America
+    <takeStatuByCampus>k__BackingField: Allies
+    <isAlliesSupply>k__BackingField: 1
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 1
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 33
+    <plateName>k__BackingField: India
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 34
+    <plateName>k__BackingField: SoutheastAsia
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 35
+    <plateName>k__BackingField: Indonesia
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 36
+    <plateName>k__BackingField: Vladivostok
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 37
+    <plateName>k__BackingField: Japan
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: Japan
+    <takeStatuByCampus>k__BackingField: Axis
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 1
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 1
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 38
+    <plateName>k__BackingField: EastChinaSea
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 39
+    <plateName>k__BackingField: Philippines
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 40
+    <plateName>k__BackingField: SouthChinaSea
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 41
+    <plateName>k__BackingField: NewGuinea
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 42
+    <plateName>k__BackingField: Australia
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 43
+    <plateName>k__BackingField: NorthPacific
+    <plateType>k__BackingField: "\u6D77\u6D0B"
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 44
+    <plateName>k__BackingField: Hawaii
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 1
+  - <plateId>k__BackingField: 45
+    <plateName>k__BackingField: Iwo
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 46
+    <plateName>k__BackingField: CentralPacific
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 47
+    <plateName>k__BackingField: SouthPacific
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 48
+    <plateName>k__BackingField: NewZealand
+    <plateType>k__BackingField: Land
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 49
+    <plateName>k__BackingField: EasternPacific
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  - <plateId>k__BackingField: 50
+    <plateName>k__BackingField: CaspianSea
+    <plateType>k__BackingField: Sea
+    <takeStatuByCountry>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
