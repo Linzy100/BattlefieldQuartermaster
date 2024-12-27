@@ -13,27 +13,30 @@ public class Germany : Singleton<Germany>
     // 剩余海军
     public int navy = 3;
     // 弃牌堆
-    public List<GameObject> DiscardPile;
+    public List<Card> DiscardPile;
     // 剩余牌堆
-    public List<GameObject> RemainPile;
+    public List<Card> RemainPile;
     // 当前手牌
-    public List<GameObject> HandCards;
+    public List<Card> HandCards;
     // 当前已挂状态牌
-    public List<GameObject> StatusCards;
+    public List<Card> StatusCards;
+    //当前已挂对策牌
+    public List<Card> CountermeasuresCards;
 
 
     // Start is called before the first frame update
     void start()
     {
-        DiscardPile = new List<GameObject>(); // 初始化弃牌堆
+        DiscardPile = new List<Card>(); // 初始化弃牌堆
         // 初始化剩余牌堆
-        RemainPile = new List<GameObject>();
+        RemainPile = new List<Card>();
         // 此时剩余牌堆应该是所有牌的集合
         // 添加所有牌
         // 这里你需要根据你的游戏逻辑来添加卡牌到RemainPile
 
-        HandCards = new List<GameObject>(); // 初始化手牌
-        StatusCards = new List<GameObject>(); // 初始化局势牌
+        HandCards = new List<Card>(); // 初始化手牌
+        StatusCards = new List<Card>(); // 初始化局势牌
+        CountermeasuresCards = new List<Card>(); // 初始化对策牌
     }
 
     // Update is called once per frame

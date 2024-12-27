@@ -10,8 +10,8 @@ public class ScoreManager : Singleton<ScoreManager>
     // Start is called before the first frame update
     void Start()
     {
-        Score_Allies = 1;
-        Score_Axis = 1;
+        Score_Allies = 0;
+        Score_Axis = 0;
     }
 
     // Update is called once per frame
