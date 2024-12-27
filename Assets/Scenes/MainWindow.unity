@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -104,7 +103,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +116,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -135,6 +134,7 @@ GameObject:
   - component: {fileID: 20104887}
   - component: {fileID: 20104886}
   - component: {fileID: 20104885}
+  - component: {fileID: 20104888}
   m_Layer: 5
   m_Name: EasternChina
   m_TagString: Untagged
@@ -155,7 +155,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -244,6 +243,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20104883}
   m_CullTransparentMesh: 1
+--- !u!114 &20104888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20104883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &48818458
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +394,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -391,6 +412,7 @@ GameObject:
   - component: {fileID: 58995072}
   - component: {fileID: 58995071}
   - component: {fileID: 58995070}
+  - component: {fileID: 58995073}
   m_Layer: 5
   m_Name: Canada_Left
   m_TagString: Untagged
@@ -411,7 +433,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -500,6 +521,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58995068}
   m_CullTransparentMesh: 1
+--- !u!114 &58995073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58995068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &67071692
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +575,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961972334}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -765,7 +808,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1977758217}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -803,7 +845,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -938,10 +979,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1984749280}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -995,6 +1035,7 @@ GameObject:
   - component: {fileID: 232025039}
   - component: {fileID: 232025038}
   - component: {fileID: 232025037}
+  - component: {fileID: 232025040}
   m_Layer: 5
   m_Name: Scandinavia
   m_TagString: Untagged
@@ -1015,7 +1056,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1104,6 +1144,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232025035}
   m_CullTransparentMesh: 1
+--- !u!114 &232025040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232025035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &236290652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,13 +1227,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236290652}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239104349
 GameObject:
@@ -1203,10 +1266,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1936154162}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1331,7 +1393,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1354,7 +1418,6 @@ RectTransform:
   - {fileID: 849191121}
   - {fileID: 961972334}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1628,7 +1691,6 @@ RectTransform:
   m_Children:
   - {fileID: 1385136779}
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1647,6 +1709,7 @@ GameObject:
   - component: {fileID: 269679338}
   - component: {fileID: 269679337}
   - component: {fileID: 269679336}
+  - component: {fileID: 269679339}
   m_Layer: 5
   m_Name: SoutheastPacific
   m_TagString: Untagged
@@ -1667,7 +1730,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1756,6 +1818,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269679334}
   m_CullTransparentMesh: 1
+--- !u!114 &269679339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269679334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &308117539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,7 +1874,6 @@ RectTransform:
   m_Children:
   - {fileID: 1859914049}
   m_Father: {fileID: 1617083917}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1890,6 +1974,8 @@ GameObject:
   - component: {fileID: 334483954}
   - component: {fileID: 334483953}
   - component: {fileID: 334483952}
+  - component: {fileID: 334483955}
+  - component: {fileID: 334483956}
   m_Layer: 5
   m_Name: America_Left
   m_TagString: Untagged
@@ -1910,7 +1996,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2011,6 +2096,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334483950}
   m_CullTransparentMesh: 1
+--- !u!114 &334483955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334483950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
+--- !u!114 &334483956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334483950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &337603865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,8 +2154,9 @@ GameObject:
   - component: {fileID: 337603869}
   - component: {fileID: 337603868}
   - component: {fileID: 337603867}
+  - component: {fileID: 337603870}
   m_Layer: 5
-  m_Name: vladivostok
+  m_Name: Vladivostok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2043,7 +2175,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2132,6 +2263,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337603865}
   m_CullTransparentMesh: 1
+--- !u!114 &337603870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337603865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &343585909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,7 +2317,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 248068803}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2220,6 +2373,7 @@ GameObject:
   - component: {fileID: 382886236}
   - component: {fileID: 382886235}
   - component: {fileID: 382886234}
+  - component: {fileID: 382886237}
   m_Layer: 5
   m_Name: NorthernAfrica
   m_TagString: Untagged
@@ -2240,7 +2394,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2329,6 +2482,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382886232}
   m_CullTransparentMesh: 1
+--- !u!114 &382886237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382886232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &383345120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,6 +2517,8 @@ GameObject:
   - component: {fileID: 383345124}
   - component: {fileID: 383345123}
   - component: {fileID: 383345122}
+  - component: {fileID: 383345125}
+  - component: {fileID: 383345126}
   m_Layer: 5
   m_Name: America_Right
   m_TagString: Untagged
@@ -2361,7 +2539,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2450,6 +2627,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383345120}
   m_CullTransparentMesh: 1
+--- !u!114 &383345125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383345120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
+--- !u!114 &383345126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383345120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &393524028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,7 +2706,6 @@ RectTransform:
   m_Children:
   - {fileID: 1984749280}
   m_Father: {fileID: 1017108642}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -2704,7 +2926,6 @@ RectTransform:
   m_Children:
   - {fileID: 578857836}
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2743,7 +2964,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849191121}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2856,6 +3076,7 @@ GameObject:
   - component: {fileID: 447688678}
   - component: {fileID: 447688677}
   - component: {fileID: 447688676}
+  - component: {fileID: 447688679}
   m_Layer: 5
   m_Name: Philippines
   m_TagString: Untagged
@@ -2876,7 +3097,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2965,6 +3185,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447688674}
   m_CullTransparentMesh: 1
+--- !u!114 &447688679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447688674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &461182743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,7 +3241,6 @@ RectTransform:
   m_Children:
   - {fileID: 470310465}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3130,7 +3372,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 461182744}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3246,6 +3487,7 @@ GameObject:
   - component: {fileID: 491436791}
   - component: {fileID: 491436790}
   - component: {fileID: 491436789}
+  - component: {fileID: 491436792}
   m_Layer: 5
   m_Name: India
   m_TagString: Untagged
@@ -3266,7 +3508,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3355,6 +3596,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491436787}
   m_CullTransparentMesh: 1
+--- !u!114 &491436792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491436787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &497277363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3367,6 +3631,7 @@ GameObject:
   - component: {fileID: 497277367}
   - component: {fileID: 497277366}
   - component: {fileID: 497277365}
+  - component: {fileID: 497277368}
   m_Layer: 5
   m_Name: Kazakhstan
   m_TagString: Untagged
@@ -3387,7 +3652,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3476,6 +3740,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497277363}
   m_CullTransparentMesh: 1
+--- !u!114 &497277368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497277363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &510784791
 GameObject:
   m_ObjectHideFlags: 0
@@ -3507,7 +3794,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1140478297}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.6666108}
@@ -3581,7 +3867,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750076367}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -3622,7 +3907,6 @@ RectTransform:
   - {fileID: 1249839087}
   - {fileID: 1873907837}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3728,7 +4012,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167886892}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3844,6 +4127,7 @@ GameObject:
   - component: {fileID: 550761690}
   - component: {fileID: 550761689}
   - component: {fileID: 550761688}
+  - component: {fileID: 550761691}
   m_Layer: 5
   m_Name: Canada_Right
   m_TagString: Untagged
@@ -3864,7 +4148,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3953,6 +4236,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550761686}
   m_CullTransparentMesh: 1
+--- !u!114 &550761691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550761686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &578857835
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,7 +4290,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 431462219}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4100,6 +4405,7 @@ GameObject:
   - component: {fileID: 593382151}
   - component: {fileID: 593382150}
   - component: {fileID: 593382149}
+  - component: {fileID: 593382152}
   m_Layer: 5
   m_Name: RossRegion
   m_TagString: Untagged
@@ -4120,7 +4426,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4209,6 +4514,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593382147}
   m_CullTransparentMesh: 1
+--- !u!114 &593382152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593382147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &596418975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,6 +4549,7 @@ GameObject:
   - component: {fileID: 596418979}
   - component: {fileID: 596418978}
   - component: {fileID: 596418977}
+  - component: {fileID: 596418980}
   m_Layer: 5
   m_Name: Hawaii
   m_TagString: Untagged
@@ -4241,7 +4570,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4330,6 +4658,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596418975}
   m_CullTransparentMesh: 1
+--- !u!114 &596418980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596418975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &607568367
 GameObject:
   m_ObjectHideFlags: 0
@@ -4342,6 +4693,7 @@ GameObject:
   - component: {fileID: 607568371}
   - component: {fileID: 607568370}
   - component: {fileID: 607568369}
+  - component: {fileID: 607568372}
   m_Layer: 5
   m_Name: NorthPacific
   m_TagString: Untagged
@@ -4362,7 +4714,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4451,6 +4802,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607568367}
   m_CullTransparentMesh: 1
+--- !u!114 &607568372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607568367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &660642196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4463,6 +4837,7 @@ GameObject:
   - component: {fileID: 660642200}
   - component: {fileID: 660642199}
   - component: {fileID: 660642198}
+  - component: {fileID: 660642201}
   m_Layer: 5
   m_Name: EasternEurope
   m_TagString: Untagged
@@ -4483,7 +4858,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4572,6 +4946,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660642196}
   m_CullTransparentMesh: 1
+--- !u!114 &660642201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660642196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &671141594
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,7 +5003,6 @@ RectTransform:
   - {fileID: 962668608}
   - {fileID: 779585641}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4714,7 +5110,6 @@ RectTransform:
   m_Children:
   - {fileID: 1447394406}
   m_Father: {fileID: 849835223}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4801,7 +5196,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 962668608}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -4839,7 +5233,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1882390113}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4955,6 +5348,7 @@ GameObject:
   - component: {fileID: 708010364}
   - component: {fileID: 708010363}
   - component: {fileID: 708010362}
+  - component: {fileID: 708010365}
   m_Layer: 5
   m_Name: NewZealand
   m_TagString: Untagged
@@ -4975,7 +5369,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5064,6 +5457,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708010360}
   m_CullTransparentMesh: 1
+--- !u!114 &708010365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708010360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &711580557
 GameObject:
   m_ObjectHideFlags: 0
@@ -5095,7 +5511,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 953913257}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5232,12 +5647,11 @@ RectTransform:
   m_Children:
   - {fileID: 511468737}
   m_Father: {fileID: 1017108642}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -17}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &750076368
 MonoBehaviour:
@@ -5321,7 +5735,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849191121}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5458,7 +5871,6 @@ RectTransform:
   m_Children:
   - {fileID: 1140478297}
   m_Father: {fileID: 671141595}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5585,7 +5997,6 @@ RectTransform:
   m_Children:
   - {fileID: 1891535248}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5698,6 +6109,7 @@ GameObject:
   - component: {fileID: 804130251}
   - component: {fileID: 804130250}
   - component: {fileID: 804130249}
+  - component: {fileID: 804130252}
   m_Layer: 5
   m_Name: NewGuinea
   m_TagString: Untagged
@@ -5718,7 +6130,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5807,6 +6218,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804130247}
   m_CullTransparentMesh: 1
+--- !u!114 &804130252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804130247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &849191120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5847,7 +6281,6 @@ RectTransform:
   - {fileID: 1337583785}
   - {fileID: 437229252}
   m_Father: {fileID: 248068803}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5948,7 +6381,6 @@ RectTransform:
   - {fileID: 671689217}
   - {fileID: 1094653657}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6054,7 +6486,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849191121}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6189,7 +6620,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849191121}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6326,7 +6756,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1799544905}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6459,7 +6888,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 973413205}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -6478,6 +6906,7 @@ GameObject:
   - component: {fileID: 927185879}
   - component: {fileID: 927185878}
   - component: {fileID: 927185877}
+  - component: {fileID: 927185880}
   m_Layer: 5
   m_Name: CaspianSea
   m_TagString: Untagged
@@ -6498,7 +6927,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6587,6 +7015,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927185875}
   m_CullTransparentMesh: 1
+--- !u!114 &927185880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927185875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &931905255
 GameObject:
   m_ObjectHideFlags: 0
@@ -6599,6 +7050,7 @@ GameObject:
   - component: {fileID: 931905259}
   - component: {fileID: 931905258}
   - component: {fileID: 931905257}
+  - component: {fileID: 931905260}
   m_Layer: 5
   m_Name: SouthernAfrica
   m_TagString: Untagged
@@ -6619,7 +7071,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6708,6 +7159,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931905255}
   m_CullTransparentMesh: 1
+--- !u!114 &931905260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931905255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &947310510
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,6 +7194,7 @@ GameObject:
   - component: {fileID: 947310514}
   - component: {fileID: 947310513}
   - component: {fileID: 947310512}
+  - component: {fileID: 947310515}
   m_Layer: 5
   m_Name: NorthSea
   m_TagString: Untagged
@@ -6740,7 +7215,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6829,6 +7303,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947310510}
   m_CullTransparentMesh: 1
+--- !u!114 &947310515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947310510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &950755767
 GameObject:
   m_ObjectHideFlags: 0
@@ -6898,7 +7395,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7032,7 +7528,6 @@ RectTransform:
   m_Children:
   - {fileID: 711580558}
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7079,7 +7574,6 @@ RectTransform:
   - {fileID: 1907723127}
   - {fileID: 1853830569}
   m_Father: {fileID: 248068803}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7177,7 +7671,6 @@ RectTransform:
   m_Children:
   - {fileID: 682211697}
   m_Father: {fileID: 671141595}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7268,12 +7761,11 @@ RectTransform:
   m_Children:
   - {fileID: 927092345}
   m_Father: {fileID: 1935297780}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -17}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &973413206
 MonoBehaviour:
@@ -7357,7 +7849,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1604418408}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.66661084}
@@ -7436,7 +7927,6 @@ RectTransform:
   - {fileID: 750076367}
   - {fileID: 393524029}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7523,6 +8013,7 @@ GameObject:
   - component: {fileID: 1029292209}
   - component: {fileID: 1029292208}
   - component: {fileID: 1029292207}
+  - component: {fileID: 1029292210}
   m_Layer: 5
   m_Name: SouthAtlantic
   m_TagString: Untagged
@@ -7543,7 +8034,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7632,6 +8122,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029292205}
   m_CullTransparentMesh: 1
+--- !u!114 &1029292210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029292205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1036922676
 GameObject:
   m_ObjectHideFlags: 0
@@ -7644,6 +8157,7 @@ GameObject:
   - component: {fileID: 1036922680}
   - component: {fileID: 1036922679}
   - component: {fileID: 1036922678}
+  - component: {fileID: 1036922681}
   m_Layer: 5
   m_Name: MidAtlantic
   m_TagString: Untagged
@@ -7664,7 +8178,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7753,6 +8266,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036922676}
   m_CullTransparentMesh: 1
+--- !u!114 &1036922681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036922676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1070944855
 GameObject:
   m_ObjectHideFlags: 0
@@ -7880,7 +8416,6 @@ RectTransform:
   m_Children:
   - {fileID: 1456822747}
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7920,7 +8455,6 @@ RectTransform:
   m_Children:
   - {fileID: 1942826809}
   m_Father: {fileID: 849835223}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -8026,6 +8560,7 @@ GameObject:
   - component: {fileID: 1102290274}
   - component: {fileID: 1102290273}
   - component: {fileID: 1102290272}
+  - component: {fileID: 1102290275}
   m_Layer: 5
   m_Name: Moscow
   m_TagString: Untagged
@@ -8046,7 +8581,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8135,6 +8669,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102290270}
   m_CullTransparentMesh: 1
+--- !u!114 &1102290275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102290270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1105847630
 GameObject:
   m_ObjectHideFlags: 0
@@ -8164,7 +8721,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1249839087}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -8201,7 +8757,6 @@ RectTransform:
   m_Children:
   - {fileID: 510784792}
   m_Father: {fileID: 779585641}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8220,6 +8775,7 @@ GameObject:
   - component: {fileID: 1158396056}
   - component: {fileID: 1158396055}
   - component: {fileID: 1158396054}
+  - component: {fileID: 1158396057}
   m_Layer: 5
   m_Name: IndianOcean
   m_TagString: Untagged
@@ -8240,7 +8796,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8329,6 +8884,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158396052}
   m_CullTransparentMesh: 1
+--- !u!114 &1158396057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158396052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1167886891
 GameObject:
   m_ObjectHideFlags: 0
@@ -8362,7 +8940,6 @@ RectTransform:
   m_Children:
   - {fileID: 525540172}
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8481,7 +9058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1177791882
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8511,7 +9088,6 @@ RectTransform:
   - {fileID: 796535913}
   - {fileID: 461182744}
   m_Father: {fileID: 248068803}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -8589,6 +9165,7 @@ GameObject:
   - component: {fileID: 1191519958}
   - component: {fileID: 1191519957}
   - component: {fileID: 1191519956}
+  - component: {fileID: 1191519959}
   m_Layer: 5
   m_Name: NorthAtlantic
   m_TagString: Untagged
@@ -8609,7 +9186,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8698,6 +9274,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191519954}
   m_CullTransparentMesh: 1
+--- !u!114 &1191519959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191519954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1201446149
 GameObject:
   m_ObjectHideFlags: 0
@@ -8710,6 +9309,7 @@ GameObject:
   - component: {fileID: 1201446153}
   - component: {fileID: 1201446152}
   - component: {fileID: 1201446151}
+  - component: {fileID: 1201446154}
   m_Layer: 5
   m_Name: EastChinaSea
   m_TagString: Untagged
@@ -8730,7 +9330,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8819,6 +9418,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201446149}
   m_CullTransparentMesh: 1
+--- !u!114 &1201446154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201446149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1220129092
 GameObject:
   m_ObjectHideFlags: 0
@@ -8831,6 +9453,7 @@ GameObject:
   - component: {fileID: 1220129096}
   - component: {fileID: 1220129095}
   - component: {fileID: 1220129094}
+  - component: {fileID: 1220129097}
   m_Layer: 5
   m_Name: Balkan
   m_TagString: Untagged
@@ -8851,7 +9474,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8940,6 +9562,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220129092}
   m_CullTransparentMesh: 1
+--- !u!114 &1220129097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220129092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1225330356
 GameObject:
   m_ObjectHideFlags: 0
@@ -8971,7 +9616,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961972334}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9087,6 +9731,7 @@ GameObject:
   - component: {fileID: 1226116029}
   - component: {fileID: 1226116028}
   - component: {fileID: 1226116027}
+  - component: {fileID: 1226116030}
   m_Layer: 5
   m_Name: Iceland
   m_TagString: Untagged
@@ -9107,7 +9752,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9196,6 +9840,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226116025}
   m_CullTransparentMesh: 1
+--- !u!114 &1226116030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226116025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1245251963
 GameObject:
   m_ObjectHideFlags: 0
@@ -9227,7 +9894,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2114998846}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9364,7 +10030,6 @@ RectTransform:
   m_Children:
   - {fileID: 1105847631}
   m_Father: {fileID: 517027718}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9455,7 +10120,6 @@ RectTransform:
   m_Children:
   - {fileID: 2008202087}
   m_Father: {fileID: 1617083917}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9585,14 +10249,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 334483951}
-  - {fileID: 383345121}
-  - {fileID: 1603391748}
-  - {fileID: 2015663581}
-  - {fileID: 1220129093}
-  - {fileID: 1788113596}
-  - {fileID: 1432242563}
   - {fileID: 2137647264}
+  - {fileID: 1432242563}
+  - {fileID: 1788113596}
+  - {fileID: 1220129093}
+  - {fileID: 2015663581}
+  - {fileID: 1603391748}
+  - {fileID: 383345121}
+  - {fileID: 334483951}
   - {fileID: 58995069}
   - {fileID: 550761687}
   - {fileID: 927185876}
@@ -9639,7 +10303,6 @@ RectTransform:
   - {fileID: 2099772171}
   - {fileID: 1226116026}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9690,7 +10353,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849191121}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9808,6 +10470,7 @@ GameObject:
   - component: {fileID: 1351432358}
   - component: {fileID: 1351432357}
   - component: {fileID: 1351432356}
+  - component: {fileID: 1351432359}
   m_Layer: 5
   m_Name: SouthChinaSea
   m_TagString: Untagged
@@ -9828,7 +10491,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9917,6 +10579,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351432354}
   m_CullTransparentMesh: 1
+--- !u!114 &1351432359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351432354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1354619061
 GameObject:
   m_ObjectHideFlags: 0
@@ -9929,6 +10614,7 @@ GameObject:
   - component: {fileID: 1354619065}
   - component: {fileID: 1354619064}
   - component: {fileID: 1354619063}
+  - component: {fileID: 1354619066}
   m_Layer: 5
   m_Name: Italy
   m_TagString: Untagged
@@ -9949,7 +10635,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10038,6 +10723,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354619061}
   m_CullTransparentMesh: 1
+--- !u!114 &1354619066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354619061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1358338016
 GameObject:
   m_ObjectHideFlags: 0
@@ -10069,7 +10777,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10126,6 +10833,7 @@ GameObject:
   - component: {fileID: 1364779712}
   - component: {fileID: 1364779711}
   - component: {fileID: 1364779710}
+  - component: {fileID: 1364779713}
   m_Layer: 5
   m_Name: Japan
   m_TagString: Untagged
@@ -10146,7 +10854,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10235,6 +10942,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364779708}
   m_CullTransparentMesh: 1
+--- !u!114 &1364779713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364779708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1375743126
 GameObject:
   m_ObjectHideFlags: 0
@@ -10266,7 +10996,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849191121}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10401,7 +11130,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 251722803}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10517,8 +11245,9 @@ GameObject:
   - component: {fileID: 1402471746}
   - component: {fileID: 1402471745}
   - component: {fileID: 1402471744}
+  - component: {fileID: 1402471747}
   m_Layer: 5
-  m_Name: Mongolian region
+  m_Name: MongolianRegion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10537,7 +11266,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10626,6 +11354,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402471742}
   m_CullTransparentMesh: 1
+--- !u!114 &1402471747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402471742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1406205264
 GameObject:
   m_ObjectHideFlags: 0
@@ -10638,6 +11389,7 @@ GameObject:
   - component: {fileID: 1406205268}
   - component: {fileID: 1406205267}
   - component: {fileID: 1406205266}
+  - component: {fileID: 1406205269}
   m_Layer: 5
   m_Name: Indonesia
   m_TagString: Untagged
@@ -10658,7 +11410,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10747,6 +11498,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406205264}
   m_CullTransparentMesh: 1
+--- !u!114 &1406205269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406205264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1432242562
 GameObject:
   m_ObjectHideFlags: 0
@@ -10759,6 +11533,7 @@ GameObject:
   - component: {fileID: 1432242566}
   - component: {fileID: 1432242565}
   - component: {fileID: 1432242564}
+  - component: {fileID: 1432242567}
   m_Layer: 5
   m_Name: BlackSea
   m_TagString: Untagged
@@ -10779,7 +11554,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10868,6 +11642,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432242562}
   m_CullTransparentMesh: 1
+--- !u!114 &1432242567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432242562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1445214629
 GameObject:
   m_ObjectHideFlags: 0
@@ -10901,7 +11698,6 @@ RectTransform:
   m_Children:
   - {fileID: 1893101702}
   m_Father: {fileID: 1617083917}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11031,7 +11827,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 671689217}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -11069,7 +11864,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1070944859}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11185,6 +11979,7 @@ GameObject:
   - component: {fileID: 1464806763}
   - component: {fileID: 1464806762}
   - component: {fileID: 1464806761}
+  - component: {fileID: 1464806764}
   m_Layer: 5
   m_Name: SouthPacific
   m_TagString: Untagged
@@ -11205,7 +12000,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11294,6 +12088,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464806759}
   m_CullTransparentMesh: 1
+--- !u!114 &1464806764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464806759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1480375336
 GameObject:
   m_ObjectHideFlags: 0
@@ -11325,7 +12142,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1617083917}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11478,9 +12294,20 @@ MonoBehaviour:
   m_Dithering: 0
   m_ClearDepth: 1
   m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!81 &1574944365
 AudioListener:
   m_ObjectHideFlags: 0
@@ -11498,14 +12325,22 @@ Camera:
   m_GameObject: {fileID: 1574944363}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 3
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -11539,13 +12374,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574944363}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 518.0398, y: 248.58191, z: -14.896232}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582080072
 GameObject:
@@ -11578,7 +12413,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961972334}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11694,6 +12528,7 @@ GameObject:
   - component: {fileID: 1603391751}
   - component: {fileID: 1603391750}
   - component: {fileID: 1603391749}
+  - component: {fileID: 1603391752}
   m_Layer: 5
   m_Name: ArabianSea
   m_TagString: Untagged
@@ -11714,7 +12549,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11803,6 +12637,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603391747}
   m_CullTransparentMesh: 1
+--- !u!114 &1603391752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603391747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1603846888
 GameObject:
   m_ObjectHideFlags: 0
@@ -11834,7 +12691,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849191121}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11968,7 +12824,6 @@ RectTransform:
   m_Children:
   - {fileID: 983971707}
   m_Father: {fileID: 1873907837}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11993,7 +12848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1617083917
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12011,7 +12866,6 @@ RectTransform:
   - {fileID: 308117540}
   - {fileID: 1284332330}
   m_Father: {fileID: 248068803}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12083,6 +12937,7 @@ GameObject:
   - component: {fileID: 1623858370}
   - component: {fileID: 1623858369}
   - component: {fileID: 1623858368}
+  - component: {fileID: 1623858371}
   m_Layer: 5
   m_Name: Madagascar
   m_TagString: Untagged
@@ -12103,7 +12958,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12192,6 +13046,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623858366}
   m_CullTransparentMesh: 1
+--- !u!114 &1623858371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623858366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1632054213
 GameObject:
   m_ObjectHideFlags: 0
@@ -12204,6 +13081,7 @@ GameObject:
   - component: {fileID: 1632054217}
   - component: {fileID: 1632054216}
   - component: {fileID: 1632054215}
+  - component: {fileID: 1632054218}
   m_Layer: 5
   m_Name: Iwo
   m_TagString: Untagged
@@ -12224,7 +13102,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12313,6 +13190,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632054213}
   m_CullTransparentMesh: 1
+--- !u!114 &1632054218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632054213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1638290622
 GameObject:
   m_ObjectHideFlags: 0
@@ -12325,6 +13225,7 @@ GameObject:
   - component: {fileID: 1638290626}
   - component: {fileID: 1638290625}
   - component: {fileID: 1638290624}
+  - component: {fileID: 1638290627}
   m_Layer: 5
   m_Name: EasternPacific
   m_TagString: Untagged
@@ -12345,7 +13246,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12434,6 +13334,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638290622}
   m_CullTransparentMesh: 1
+--- !u!114 &1638290627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638290622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1653704340
 GameObject:
   m_ObjectHideFlags: 0
@@ -12446,6 +13369,7 @@ GameObject:
   - component: {fileID: 1653704344}
   - component: {fileID: 1653704343}
   - component: {fileID: 1653704342}
+  - component: {fileID: 1653704345}
   m_Layer: 5
   m_Name: MiddleEast
   m_TagString: Untagged
@@ -12466,7 +13390,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12555,6 +13478,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653704340}
   m_CullTransparentMesh: 1
+--- !u!114 &1653704345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653704340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1687359579
 GameObject:
   m_ObjectHideFlags: 0
@@ -12567,6 +13513,7 @@ GameObject:
   - component: {fileID: 1687359583}
   - component: {fileID: 1687359582}
   - component: {fileID: 1687359581}
+  - component: {fileID: 1687359584}
   m_Layer: 5
   m_Name: CentralPacific
   m_TagString: Untagged
@@ -12587,7 +13534,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12676,6 +13622,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687359579}
   m_CullTransparentMesh: 1
+--- !u!114 &1687359584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687359579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1739540571
 GameObject:
   m_ObjectHideFlags: 0
@@ -12708,7 +13677,6 @@ RectTransform:
   m_Children:
   - {fileID: 2021236737}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12765,6 +13733,7 @@ GameObject:
   - component: {fileID: 1788113599}
   - component: {fileID: 1788113598}
   - component: {fileID: 1788113597}
+  - component: {fileID: 1788113600}
   m_Layer: 5
   m_Name: BalticSea
   m_TagString: Untagged
@@ -12785,7 +13754,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12874,6 +13842,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788113595}
   m_CullTransparentMesh: 1
+--- !u!114 &1788113600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788113595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1799544901
 GameObject:
   m_ObjectHideFlags: 0
@@ -13001,7 +13992,6 @@ RectTransform:
   m_Children:
   - {fileID: 920552048}
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13039,7 +14029,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961972334}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13115,7 +14104,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961972334}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13251,7 +14239,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961972334}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13383,7 +14370,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 308117540}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13499,6 +14485,7 @@ GameObject:
   - component: {fileID: 1865755559}
   - component: {fileID: 1865755558}
   - component: {fileID: 1865755557}
+  - component: {fileID: 1865755560}
   m_Layer: 5
   m_Name: EasternMediterranean
   m_TagString: Untagged
@@ -13519,7 +14506,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13608,6 +14594,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865755555}
   m_CullTransparentMesh: 1
+--- !u!114 &1865755560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865755555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1873907836
 GameObject:
   m_ObjectHideFlags: 0
@@ -13641,7 +14650,6 @@ RectTransform:
   m_Children:
   - {fileID: 1604418408}
   m_Father: {fileID: 517027718}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13862,7 +14870,6 @@ RectTransform:
   m_Children:
   - {fileID: 707288872}
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13900,7 +14907,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 796535913}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14035,7 +15041,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1445214630}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14170,7 +15175,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961972334}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14404,7 +15408,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14445,7 +15448,6 @@ RectTransform:
   - {fileID: 973413205}
   - {fileID: 1968884387}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14550,7 +15552,6 @@ RectTransform:
   m_Children:
   - {fileID: 239104350}
   m_Father: {fileID: 1968884387}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14569,6 +15570,7 @@ GameObject:
   - component: {fileID: 1936217200}
   - component: {fileID: 1936217199}
   - component: {fileID: 1936217198}
+  - component: {fileID: 1936217201}
   m_Layer: 5
   m_Name: LatinAmerica
   m_TagString: Untagged
@@ -14589,7 +15591,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14678,6 +15679,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936217196}
   m_CullTransparentMesh: 1
+--- !u!114 &1936217201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936217196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1942826808
 GameObject:
   m_ObjectHideFlags: 0
@@ -14708,7 +15732,6 @@ RectTransform:
   m_Children:
   - {fileID: 2105566804}
   m_Father: {fileID: 1094653657}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -14727,6 +15750,7 @@ GameObject:
   - component: {fileID: 1966531812}
   - component: {fileID: 1966531811}
   - component: {fileID: 1966531810}
+  - component: {fileID: 1966531813}
   m_Layer: 5
   m_Name: Ukraine
   m_TagString: Untagged
@@ -14747,7 +15771,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14836,6 +15859,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966531808}
   m_CullTransparentMesh: 1
+--- !u!114 &1966531813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966531808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &1968803442
 GameObject:
   m_ObjectHideFlags: 0
@@ -14867,7 +15913,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14945,7 +15990,6 @@ RectTransform:
   m_Children:
   - {fileID: 1936154162}
   m_Father: {fileID: 1935297780}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -15071,7 +16115,6 @@ RectTransform:
   m_Children:
   - {fileID: 102689340}
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15147,7 +16190,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15281,7 +16323,6 @@ RectTransform:
   m_Children:
   - {fileID: 186068365}
   m_Father: {fileID: 393524029}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15319,7 +16360,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961972334}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15435,6 +16475,7 @@ GameObject:
   - component: {fileID: 2002969287}
   - component: {fileID: 2002969286}
   - component: {fileID: 2002969285}
+  - component: {fileID: 2002969288}
   m_Layer: 5
   m_Name: Germanic
   m_TagString: Untagged
@@ -15455,7 +16496,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15544,6 +16584,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002969283}
   m_CullTransparentMesh: 1
+--- !u!114 &2002969288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002969283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &2005081431
 GameObject:
   m_ObjectHideFlags: 0
@@ -15586,7 +16649,6 @@ RectTransform:
   - {fileID: 1167886892}
   - {fileID: 184068631}
   m_Father: {fileID: 248068803}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15685,7 +16747,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1284332330}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15801,6 +16862,7 @@ GameObject:
   - component: {fileID: 2010782864}
   - component: {fileID: 2010782863}
   - component: {fileID: 2010782862}
+  - component: {fileID: 2010782865}
   m_Layer: 5
   m_Name: WesternChina
   m_TagString: Untagged
@@ -15821,7 +16883,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15910,6 +16971,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010782860}
   m_CullTransparentMesh: 1
+--- !u!114 &2010782865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010782860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &2015663580
 GameObject:
   m_ObjectHideFlags: 0
@@ -15922,6 +17006,7 @@ GameObject:
   - component: {fileID: 2015663584}
   - component: {fileID: 2015663583}
   - component: {fileID: 2015663582}
+  - component: {fileID: 2015663585}
   m_Layer: 5
   m_Name: Australia
   m_TagString: Untagged
@@ -15942,7 +17027,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16031,6 +17115,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015663580}
   m_CullTransparentMesh: 1
+--- !u!114 &2015663585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015663580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &2021236734
 GameObject:
   m_ObjectHideFlags: 0
@@ -16159,7 +17266,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1739540572}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16178,6 +17284,7 @@ GameObject:
   - component: {fileID: 2099772174}
   - component: {fileID: 2099772173}
   - component: {fileID: 2099772172}
+  - component: {fileID: 2099772175}
   m_Layer: 5
   m_Name: WesternEurope
   m_TagString: Untagged
@@ -16198,7 +17305,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16287,6 +17393,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099772170}
   m_CullTransparentMesh: 1
+--- !u!114 &2099772175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099772170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &2102327101
 GameObject:
   m_ObjectHideFlags: 0
@@ -16415,7 +17544,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1177791882}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16453,7 +17581,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1942826809}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -16529,7 +17656,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 849191121}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16701,7 +17827,6 @@ RectTransform:
   m_Children:
   - {fileID: 1245251964}
   m_Father: {fileID: 2005081432}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16720,6 +17845,7 @@ GameObject:
   - component: {fileID: 2130411541}
   - component: {fileID: 2130411540}
   - component: {fileID: 2130411539}
+  - component: {fileID: 2130411542}
   m_Layer: 5
   m_Name: Siberia
   m_TagString: Untagged
@@ -16740,7 +17866,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16829,6 +17954,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130411537}
   m_CullTransparentMesh: 1
+--- !u!114 &2130411542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130411537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &2137647263
 GameObject:
   m_ObjectHideFlags: 0
@@ -16841,6 +17989,7 @@ GameObject:
   - component: {fileID: 2137647267}
   - component: {fileID: 2137647266}
   - component: {fileID: 2137647265}
+  - component: {fileID: 2137647268}
   m_Layer: 5
   m_Name: BritishIsles
   m_TagString: Untagged
@@ -16861,7 +18010,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16950,6 +18098,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137647263}
   m_CullTransparentMesh: 1
+--- !u!114 &2137647268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137647263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
 --- !u!1 &2139765336
 GameObject:
   m_ObjectHideFlags: 0
@@ -16962,6 +18133,7 @@ GameObject:
   - component: {fileID: 2139765340}
   - component: {fileID: 2139765339}
   - component: {fileID: 2139765338}
+  - component: {fileID: 2139765341}
   m_Layer: 5
   m_Name: SoutheastAsia
   m_TagString: Untagged
@@ -16982,7 +18154,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1329151035}
-  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17071,3 +18242,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139765336}
   m_CullTransparentMesh: 1
+--- !u!114 &2139765341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139765336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  plateId: 0
+  plateName: 
+  plateType: 
+  takeStatuByCountry: 
+  takeStatuByCampus: 
+  isAlliesSupply: 0
+  isAxisSupply: 0
+  isAlliesScore: 0
+  isAxisScore: 0
+  isInSupply: 0
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 248068803}
+  - {fileID: 236290655}
+  - {fileID: 1574944367}

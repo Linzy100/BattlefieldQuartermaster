@@ -204,7 +204,7 @@ MonoBehaviour:
     <isAxisScore>k__BackingField: 0
     <isInSupply>k__BackingField: 0
   - <plateId>k__BackingField: 19
-    <plateName>k__BackingField: 'EasternEurope '
+    <plateName>k__BackingField: EasternEurope
     <plateType>k__BackingField: Land
     <takeStatuByCountry>k__BackingField: 
     <takeStatuByCampus>k__BackingField: 
@@ -445,7 +445,7 @@ MonoBehaviour:
     <isInSupply>k__BackingField: 1
   - <plateId>k__BackingField: 43
     <plateName>k__BackingField: NorthPacific
-    <plateType>k__BackingField: "\u6D77\u6D0B"
+    <plateType>k__BackingField: Sea
     <takeStatuByCountry>k__BackingField: 
     <takeStatuByCampus>k__BackingField: 
     <isAlliesSupply>k__BackingField: 0
