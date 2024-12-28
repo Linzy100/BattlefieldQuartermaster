@@ -29,7 +29,7 @@ public class UnitedKingdom : Singleton<UnitedKingdom>
     // Start is called before the first frame update
     void Start()
     {
-        DiscardPile = new List<Card>(); // 初始化弃牌堆
+        /*DiscardPile = new List<Card>(); // 初始化弃牌堆
         CardPile = new List<Card>();//初始化抽牌堆
         HandCards = new List<Card>(); // 初始化手牌
         StatusCards = new List<Card>(); // 初始化局势牌
@@ -80,7 +80,8 @@ public class UnitedKingdom : Singleton<UnitedKingdom>
         //foreach (Card card in CardPile)
         //{
         //    Debug.Log(card.cardName);
-        //}
+        //}*/
+        CardManager.Instance.InitUnitedKingdomCardPiles();
     }
 
     // Update is called once per frame

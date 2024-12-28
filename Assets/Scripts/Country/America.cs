@@ -30,7 +30,7 @@ public class America : Singleton<America>
     // Start is called before the first frame update
     void Start()
     {
-        DiscardPile = new List<Card>(); // 初始化弃牌堆
+        /*DiscardPile = new List<Card>(); // 初始化弃牌堆
         CardPile = new List<Card>();//初始化抽牌堆
         HandCards = new List<Card>(); // 初始化手牌
         StatusCards = new List<Card>(); // 初始化局势牌
@@ -38,10 +38,10 @@ public class America : Singleton<America>
 
         //放牌进抽牌堆，并进行打乱
         {
-            CardPile.Add( new Card6101());
-            CardPile.Add( new Card6102());
-            CardPile.Add( new Card6103());
-            CardPile.Add( new Card6104());
+            CardPile.Add(new Card6101());
+            CardPile.Add(new Card6102());
+            CardPile.Add(new Card6103());
+            CardPile.Add(new Card6104());
 
             CardPile.Add(new Card6201());
             CardPile.Add(new Card6202());
@@ -89,7 +89,8 @@ public class America : Singleton<America>
             StatusCards.Add(CardPile[13]);//
             CountermeasuresCards.Add(CardPile[10]);//
             CountermeasuresCards.Add(CardPile[11]);//
-        }
+        }*/
+        CardManager.Instance.InitAmericaCardPiles();
     }
 
     // Update is called once per frame
