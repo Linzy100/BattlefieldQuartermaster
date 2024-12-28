@@ -94,7 +94,7 @@ public class PlayPanel : MonoBehaviour
 
     public void SetUIHandCards()
     {
-        //根据country来显示当前国家手牌
+        //根据country来显示当前国家持有手牌
         float x = this.transform.Find("HandCardArea").transform.position.x-325;
         float y = this.transform.Find("HandCardArea").transform.position.y;
         float z = this.transform.Find("HandCardArea").transform.position.z;
@@ -112,19 +112,59 @@ public class PlayPanel : MonoBehaviour
                 }
                 break;
             case "Soviet":
-
+                {
+                    foreach (Card card in Soviet.Instance.HandCards)
+                    {
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        card1.name = card.cardName;
+                        card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
+                        x += 112;
+                    }
+                }
                 break;
             case "UnitedKingdom":
-
+                {
+                    foreach (Card card in UnitedKingdom.Instance.HandCards)
+                    {
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        card1.name = card.cardName;
+                        card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
+                        x += 112;
+                    }
+                }
                 break;
             case "Germany":
-
+                {
+                    foreach (Card card in Germany.Instance.HandCards)
+                    {
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        card1.name = card.cardName;
+                        card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
+                        x += 112;
+                    }
+                }
                 break;
             case "Japan":
-
+                {
+                    foreach (Card card in Japan.Instance.HandCards)
+                    {
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        card1.name = card.cardName;
+                        card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
+                        x += 112;
+                    }
+                }
                 break;
             case "Italy":
-
+                {
+                    foreach (Card card in Italy.Instance.HandCards)
+                    {
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        card1.name = card.cardName;
+                        card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
+                        x += 112;
+                    }
+                }
                 break;
             default:
                 Debug.LogError("Unknown country: " + country);
@@ -132,15 +172,31 @@ public class PlayPanel : MonoBehaviour
         }
     }
 
+    public void OnClickDiscardButton()
+    {
+        if (CardClickHandler.selectedCard != null)
+        {
+            Debug.Log("出牌："+ CardClickHandler.selectedCard.gameObject.name);
+        }
+        else
+        {
+            Debug.Log("未选中牌");
+        }
+    }
 
-    public void OnClickViewStatusCardButton()
+    public void OnClickViewStatusCountermeasuresCardButton()
+    {
+        this.GetComponentInParent<Canvas>().transform.Find("StatusCardAndCountermeasuresCardPanel").gameObject.SetActive(true);
+        this.gameObject.SetActive(false);
+    }
+    public void OnClickViewOtherStatusCardButton()
     {
         GameObject panel= this.GetComponentInParent<Canvas>().transform.Find("StatusCardPanel").gameObject;
         panel.SetActive(true);
         this.gameObject.SetActive(false);
     }
 
-    public void OnClickViewCountermeasuresCardButton()
+    public void OnClickViewOtherCountermeasuresCardButton()
     {
         GameObject panel = this.GetComponentInParent<Canvas>().transform.Find("CountermeasuresCardPanel").gameObject;
         panel.SetActive(true);

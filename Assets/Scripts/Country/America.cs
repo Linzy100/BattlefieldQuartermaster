@@ -83,9 +83,12 @@ public class America : Singleton<America>
             //{
             //    Debug.Log(card.cardName);
             //}
-            StatusCards.Add(CardPile[13]);//
             HandCards.Add(CardPile[14]);//
             HandCards.Add(CardPile[15]);//
+            StatusCards.Add(CardPile[12]);//
+            StatusCards.Add(CardPile[13]);//
+            CountermeasuresCards.Add(CardPile[10]);//
+            CountermeasuresCards.Add(CardPile[11]);//
         }
     }
 
