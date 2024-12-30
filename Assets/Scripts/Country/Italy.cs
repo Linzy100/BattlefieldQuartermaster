@@ -80,6 +80,7 @@ public class Italy : Singleton<Italy>
         //    Debug.Log(card.cardName);
         //}*/
         CardManager.Instance.InitItalyCardPiles();
+        CardManager.Instance.GetHandCardtoSeven(country);
     }
 
     // Update is called once per frame

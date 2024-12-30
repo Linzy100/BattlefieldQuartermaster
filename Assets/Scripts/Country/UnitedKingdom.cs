@@ -82,6 +82,7 @@ public class UnitedKingdom : Singleton<UnitedKingdom>
         //    Debug.Log(card.cardName);
         //}*/
         CardManager.Instance.InitUnitedKingdomCardPiles();
+        CardManager.Instance.GetHandCardtoSeven(country);
     }
 
     // Update is called once per frame

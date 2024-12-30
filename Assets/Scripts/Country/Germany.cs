@@ -86,6 +86,7 @@ public class Germany : Singleton<Germany>
         //    Debug.Log(card.cardName);
         //}*/
         CardManager.Instance.InitGermanyCardPiles();
+        CardManager.Instance.GetHandCardtoSeven(country);
     }
 
     // Update is called once per frame

@@ -79,6 +79,7 @@ public class Japan : Singleton<Japan>
         //    Debug.Log(card.cardName);
         //}*/
         CardManager.Instance.InitJapanCardPiles();
+        CardManager.Instance.GetHandCardtoSeven(country);
     }
 
     // Update is called once per frame

@@ -80,6 +80,7 @@ public class Soviet : Singleton<Soviet>
         //    Debug.Log(card.cardName);
         //}*/
         CardManager.Instance.InitSovietCardPiles();
+        CardManager.Instance.GetHandCardtoSeven(country);
     }
 
     // Update is called once per frame

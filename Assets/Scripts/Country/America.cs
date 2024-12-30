@@ -91,6 +91,7 @@ public class America : Singleton<America>
             CountermeasuresCards.Add(CardPile[11]);//
         }*/
         CardManager.Instance.InitAmericaCardPiles();
+        CardManager.Instance.GetHandCardtoSeven(country);
     }
 
     // Update is called once per frame
