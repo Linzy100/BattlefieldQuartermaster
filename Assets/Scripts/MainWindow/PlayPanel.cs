@@ -104,7 +104,7 @@ public class PlayPanel : MonoBehaviour
     {
         ClearPreviousCards();
         //根据country来显示当前国家持有手牌
-        float x = this.transform.Find("HandCardArea").transform.position.x - 325;
+        float x = this.transform.Find("HandCardArea").transform.position.x - 335;
         float y = this.transform.Find("HandCardArea").transform.position.y;
         float z = this.transform.Find("HandCardArea").transform.position.z;
         switch (country)
@@ -206,23 +206,24 @@ public class PlayPanel : MonoBehaviour
             {
                 case "America":
                     {
-                        foreach (Card card in America.Instance.HandCards)
+                        for (int i = America.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
-                            if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
+                            Card card = America.Instance.HandCards[i];
+                             if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
                             {//打出的卡牌有的进入弃牌堆有的不进入（比如状态卡）
                                 if (card.type == "状态卡")
-                                {
-                                    America.Instance.HandCards.Remove(card);
+                                {//remove函数有问题
+                                    America.Instance.HandCards.RemoveAt(i);
                                     America.Instance.StatusCards.Add(card);
                                 }
                                 else if(card.type == "对策卡")
                                 {
-                                    America.Instance.HandCards.Remove(card);
+                                    America.Instance.HandCards.RemoveAt(i);
                                     America.Instance.CountermeasuresCards.Add(card);
                                 }
                                 else
                                 {
-                                    America.Instance.HandCards.Remove(card);
+                                    America.Instance.HandCards.RemoveAt(i);
                                     America.Instance.DiscardPile.Add(card);
                                 }
                                 break;
@@ -232,23 +233,24 @@ public class PlayPanel : MonoBehaviour
                     break;
                 case "Soviet":
                     {
-                        foreach (Card card in Soviet.Instance.HandCards)
+                        for (int i = Soviet.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
+                            Card card = Soviet.Instance.HandCards[i];
                             if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
                             {
                                 if (card.type == "状态卡")
                                 {
-                                    Soviet.Instance.HandCards.Remove(card);
+                                    Soviet.Instance.HandCards.RemoveAt(i);
                                     Soviet.Instance.StatusCards.Add(card);
                                 }
                                 else if (card.type == "对策卡")
                                 {
-                                    Soviet.Instance.HandCards.Remove(card);
+                                    Soviet.Instance.HandCards.RemoveAt(i);
                                     Soviet.Instance.CountermeasuresCards.Add(card);
                                 }
                                 else
                                 {
-                                    Soviet.Instance.HandCards.Remove(card);
+                                    Soviet.Instance.HandCards.RemoveAt(i);
                                     Soviet.Instance.DiscardPile.Add(card);
                                 }
                                 break;
@@ -258,21 +260,22 @@ public class PlayPanel : MonoBehaviour
                     break;
                 case "UnitedKingdom":
                     {
-                        foreach (Card card in UnitedKingdom.Instance.HandCards)
+                        for (int i = UnitedKingdom.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
+                            Card card = UnitedKingdom.Instance.HandCards[i];
                             if (card.type == "状态卡")
                             {
-                                UnitedKingdom.Instance.HandCards.Remove(card);
+                                UnitedKingdom.Instance.HandCards.RemoveAt(i);
                                 UnitedKingdom.Instance.StatusCards.Add(card);
                             }
                             else if (card.type == "对策卡")
                             {
-                                UnitedKingdom.Instance.HandCards.Remove(card);
+                                UnitedKingdom.Instance.HandCards.RemoveAt(i);
                                 UnitedKingdom.Instance.CountermeasuresCards.Add(card);
                             }
                             else
                             {
-                                UnitedKingdom.Instance.HandCards.Remove(card);
+                                UnitedKingdom.Instance.HandCards.RemoveAt(i);
                                 UnitedKingdom.Instance.DiscardPile.Add(card);
                             }
                             break;
@@ -281,21 +284,22 @@ public class PlayPanel : MonoBehaviour
                     break;
                 case "Germany":
                     {
-                        foreach (Card card in Germany.Instance.HandCards)
+                        for (int i = Germany.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
+                            Card card = Germany.Instance.HandCards[i];
                             if (card.type == "状态卡")
                             {
-                                Germany.Instance.HandCards.Remove(card);
+                                Germany.Instance.HandCards.RemoveAt(i);
                                 Germany.Instance.StatusCards.Add(card);
                             }
                             else if (card.type == "对策卡")
                             {
-                                Germany.Instance.HandCards.Remove(card);
+                                Germany.Instance.HandCards.RemoveAt(i);
                                 Germany.Instance.CountermeasuresCards.Add(card);
                             }
                             else
                             {
-                                Germany.Instance.HandCards.Remove(card);
+                                Germany.Instance.HandCards.RemoveAt(i);
                                 Germany.Instance.DiscardPile.Add(card);
                             }
                             break;
@@ -304,21 +308,22 @@ public class PlayPanel : MonoBehaviour
                     break;
                 case "Japan":
                     {
-                        foreach (Card card in Japan.Instance.HandCards)
+                        for (int i = Japan.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
+                            Card card = Japan.Instance.HandCards[i];
                             if (card.type == "状态卡")
                             {
-                                Japan.Instance.HandCards.Remove(card);
+                                Japan.Instance.HandCards.RemoveAt(i);
                                 Japan.Instance.StatusCards.Add(card);
                             }
                             else if (card.type == "对策卡")
                             {
-                                Japan.Instance.HandCards.Remove(card);
+                                Japan.Instance.HandCards.RemoveAt(i);
                                 Japan.Instance.CountermeasuresCards.Add(card);
                             }
                             else
                             {
-                                Japan.Instance.HandCards.Remove(card);
+                                Japan.Instance.HandCards.RemoveAt(i);
                                 Japan.Instance.DiscardPile.Add(card);
                             }
                             break;
@@ -327,21 +332,22 @@ public class PlayPanel : MonoBehaviour
                     break;
                 case "Italy":
                     {
-                        foreach (Card card in Italy.Instance.HandCards)
+                        for (int i = Italy.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
+                            Card card = Italy.Instance.HandCards[i];
                             if (card.type == "状态卡")
                             {
-                                Italy.Instance.HandCards.Remove(card);
+                                Italy.Instance.HandCards.RemoveAt(i);
                                 Italy.Instance.StatusCards.Add(card);
                             }
                             else if (card.type == "对策卡")
                             {
-                                Italy.Instance.HandCards.Remove(card);
+                                Italy.Instance.HandCards.RemoveAt(i);
                                 Italy.Instance.CountermeasuresCards.Add(card);
                             }
                             else
                             {
-                                Italy.Instance.HandCards.Remove(card);
+                                Italy.Instance.HandCards.RemoveAt(i);
                                 Italy.Instance.DiscardPile.Add(card);
                             }
                             break;
@@ -427,4 +433,6 @@ public class PlayPanel : MonoBehaviour
         }
         return null;
     }
+
+
 }

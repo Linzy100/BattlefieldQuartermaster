@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CardClickHandler : MonoBehaviour, IPointerClickHandler
 {
     public GameObject enlargedCardPrefab; // 在Inspector中设置放大卡牌的预制体
-    public GameObject enlargedCardInstance;
+    public static GameObject enlargedCardInstance;
     public Canvas canvas;
 
     public static CardClickHandler selectedCard = null; // 静态变量，记录当前选中的卡牌

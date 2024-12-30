@@ -83,7 +83,7 @@ public class Plate:MonoBehaviour//µØ¿éÇé¿ö
                 }
                 else
                 {
-                    Debug.Log(plateId + plateName + plateType + takeStatuByCountry + takeStatuByCampus + isAlliesSupply + isAlliesScore + isAxisSupply + isAxisScore + isInSupply);
+                    //Debug.Log(plateId + plateName + plateType + takeStatuByCountry + takeStatuByCampus + isAlliesSupply + isAlliesScore + isAxisSupply + isAxisScore + isInSupply);
                 }
             }
             else

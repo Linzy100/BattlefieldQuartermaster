@@ -2037,6 +2037,145 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef36f21831b902c4687c74473d9ee0de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardDatas: {fileID: 0}
+  card1101: {fileID: 0}
+  card1102: {fileID: 0}
+  card1103: {fileID: 0}
+  card1104: {fileID: 0}
+  card1201: {fileID: 0}
+  card1202: {fileID: 0}
+  card1203: {fileID: 0}
+  card1204: {fileID: 0}
+  card1205: {fileID: 0}
+  card1206: {fileID: 0}
+  card1301: {fileID: 0}
+  card1302: {fileID: 0}
+  card1303: {fileID: 0}
+  card1304: {fileID: 0}
+  card1305: {fileID: 0}
+  card1306: {fileID: 0}
+  card1307: {fileID: 0}
+  card1308: {fileID: 0}
+  card1309: {fileID: 0}
+  card1310: {fileID: 0}
+  card1311: {fileID: 0}
+  card1312: {fileID: 0}
+  card1501: {fileID: 0}
+  card1502: {fileID: 0}
+  card1503: {fileID: 0}
+  card1504: {fileID: 0}
+  card1505: {fileID: 0}
+  card1506: {fileID: 0}
+  card2101: {fileID: 0}
+  card2102: {fileID: 0}
+  card2103: {fileID: 0}
+  card2104: {fileID: 0}
+  card2201: {fileID: 0}
+  card2202: {fileID: 0}
+  card2203: {fileID: 0}
+  card2204: {fileID: 0}
+  card2205: {fileID: 0}
+  card2301: {fileID: 0}
+  card2302: {fileID: 0}
+  card2303: {fileID: 0}
+  card2304: {fileID: 0}
+  card2305: {fileID: 0}
+  card2401: {fileID: 0}
+  card2402: {fileID: 0}
+  card2403: {fileID: 0}
+  card2404: {fileID: 0}
+  card2405: {fileID: 0}
+  card2406: {fileID: 0}
+  card2407: {fileID: 0}
+  card2501: {fileID: 0}
+  card2502: {fileID: 0}
+  card3101: {fileID: 0}
+  card3102: {fileID: 0}
+  card3103: {fileID: 0}
+  card3104: {fileID: 0}
+  card3301: {fileID: 0}
+  card3302: {fileID: 0}
+  card3303: {fileID: 0}
+  card3304: {fileID: 0}
+  card3401: {fileID: 0}
+  card3402: {fileID: 0}
+  card3403: {fileID: 0}
+  card3404: {fileID: 0}
+  card3405: {fileID: 0}
+  card3406: {fileID: 0}
+  card3407: {fileID: 0}
+  card3408: {fileID: 0}
+  card3409: {fileID: 0}
+  card3410: {fileID: 0}
+  card3411: {fileID: 0}
+  card3501: {fileID: 0}
+  card3502: {fileID: 0}
+  card4101: {fileID: 0}
+  card4102: {fileID: 0}
+  card4103: {fileID: 0}
+  card4104: {fileID: 0}
+  card4201: {fileID: 0}
+  card4202: {fileID: 0}
+  card4203: {fileID: 0}
+  card4204: {fileID: 0}
+  card4205: {fileID: 0}
+  card4206: {fileID: 0}
+  card4301: {fileID: 0}
+  card4302: {fileID: 0}
+  card4303: {fileID: 0}
+  card4304: {fileID: 0}
+  card4305: {fileID: 0}
+  card4306: {fileID: 0}
+  card4401: {fileID: 0}
+  card4402: {fileID: 0}
+  card4403: {fileID: 0}
+  card4404: {fileID: 0}
+  card4405: {fileID: 0}
+  card5101: {fileID: 0}
+  card5102: {fileID: 0}
+  card5103: {fileID: 0}
+  card5104: {fileID: 0}
+  card5201: {fileID: 0}
+  card5202: {fileID: 0}
+  card5203: {fileID: 0}
+  card5204: {fileID: 0}
+  card5205: {fileID: 0}
+  card5206: {fileID: 0}
+  card5301: {fileID: 0}
+  card5302: {fileID: 0}
+  card5304: {fileID: 0}
+  card5305: {fileID: 0}
+  card5401: {fileID: 0}
+  card5402: {fileID: 0}
+  card5403: {fileID: 0}
+  card5404: {fileID: 0}
+  card5501: {fileID: 0}
+  card5502: {fileID: 0}
+  card6101: {fileID: 0}
+  card6102: {fileID: 0}
+  card6103: {fileID: 0}
+  card6104: {fileID: 0}
+  card6201: {fileID: 0}
+  card6202: {fileID: 0}
+  card6203: {fileID: 0}
+  card6204: {fileID: 0}
+  card6205: {fileID: 0}
+  card6206: {fileID: 0}
+  card6207: {fileID: 0}
+  card6208: {fileID: 0}
+  card6209: {fileID: 0}
+  card6301: {fileID: 0}
+  card6302: {fileID: 0}
+  card6303: {fileID: 0}
+  card6304: {fileID: 0}
+  card6305: {fileID: 0}
+  card6306: {fileID: 0}
+  card6307: {fileID: 0}
+  card6501: {fileID: 0}
+  card6502: {fileID: 0}
+  card6503: {fileID: 0}
+  card6504: {fileID: 0}
+  card6505: {fileID: 0}
 --- !u!114 &248068812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21733,8 +21872,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -338, y: -476}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: -326, y: -476}
+  m_SizeDelta: {x: 205.6735, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935297781
 MonoBehaviour:

@@ -6,6 +6,7 @@ public class CardManager : Singleton<CardManager>
 {
     public Card cardDatas;
 
+    #region
     //µÂ¹ú¿¨ÅÆ
     public Card1101 card1101;
     public Card1102 card1102;
@@ -150,10 +151,10 @@ public class CardManager : Singleton<CardManager>
     public Card6503 card6503;
     public Card6504 card6504;
     public Card6505 card6505;
-
+    #endregion
 
     private List<Card> cardList = new List<Card>();
-    private System.Random rng = new System.Random();
+    private System.Random rng = new System.Random(); 
 
 
 
@@ -226,12 +227,6 @@ public class CardManager : Singleton<CardManager>
             //{
             //    Debug.Log(card.cardName);
             //}
-            //America.Instance.HandCards.Add(America.Instance.CardPile[14]);//
-            //America.Instance.HandCards.Add(America.Instance.CardPile[15]);//
-            America.Instance.StatusCards.Add(America.Instance.CardPile[12]);//
-            America.Instance.StatusCards.Add(America.Instance.CardPile[13]);//
-            America.Instance.CountermeasuresCards.Add(America.Instance.CardPile[10]);//
-            America.Instance.CountermeasuresCards.Add(America.Instance.CardPile[11]);//
         }
     }
 
