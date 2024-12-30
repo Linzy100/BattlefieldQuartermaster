@@ -23,7 +23,7 @@ public class Plate:MonoBehaviour//地块情况
     private void Start()
     {
         objectName = this.gameObject.name;
-        Debug.Log(objectName);
+        //Debug.Log(objectName);
         //data = ScriptableObject.CreateInstance<PlateData>();
         //Debug.Log(data.plateDatas[0].plateName);
         ReadPlateTable(objectName,data);//读取表格

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,25 +12,28 @@ public class PlayPanel : MonoBehaviour
     public Image country_image;
 
     public TMP_Text round_text;
+    public TMP_Text round_country_text;
     public string current_round;
-    public int round = 1;
 
     //
     public TMP_Text Score_Allies;
     public TMP_Text Score_Axis;
     public TMP_Text RemainingArmy;
     public TMP_Text RemainingNavy;
+
+    public Transform cardParent;
     // Start is called before the first frame update
     void Start()
     {
         country = SelectPanel.Instance.country;//
-        country=Translate(country);
+        country = TranslateCHtoEN(country);
         InitializePanel(country);
     }
 
     // Update is called once per frame
     void Update()
     {
+        SetUIRoundText();
         SetUIScoreAndArmyNavy(country);
     }
 
@@ -39,9 +41,7 @@ public class PlayPanel : MonoBehaviour
     {
         // 初始化面板
         country_image.sprite = Resources.Load<Sprite>("Art/" + country);
-
-        current_round = "当前回合：" + round.ToString();
-        round_text.text = current_round;
+        SetUIRoundText();
         SetUIScoreAndArmyNavy(country);
         SetUIHandCards();
     }
@@ -87,6 +87,14 @@ public class PlayPanel : MonoBehaviour
         }
     }
 
+    public void SetUIRoundText()
+    {
+        //RoundManager.Instance.turn;
+        current_round = "当前回合：" + RoundManager.Instance.round.turn.ToString();
+        round_text.text = current_round;
+        round_country_text.text = "当前回合国家：" + TranslateENtoCH(RoundManager.Instance.round.countryStage.ToString())+ "\n" + "回合阶段：\n" + RoundManager.Instance.round.turnStage.ToString();
+    }
+
     public void GetCardsToSeven()
     {
         //if()
@@ -94,17 +102,18 @@ public class PlayPanel : MonoBehaviour
 
     public void SetUIHandCards()
     {
+        ClearPreviousCards();
         //根据country来显示当前国家持有手牌
-        float x = this.transform.Find("HandCardArea").transform.position.x-325;
+        float x = this.transform.Find("HandCardArea").transform.position.x - 325;
         float y = this.transform.Find("HandCardArea").transform.position.y;
         float z = this.transform.Find("HandCardArea").transform.position.z;
         switch (country)
         {
             case "America":
                 {
-                    foreach(Card card in America.Instance.HandCards)
+                    foreach (Card card in America.Instance.HandCards)
                     {
-                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform.Find("cardParent").transform);
                         card1.name = card.cardName;
                         card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
                         x += 112;
@@ -115,7 +124,7 @@ public class PlayPanel : MonoBehaviour
                 {
                     foreach (Card card in Soviet.Instance.HandCards)
                     {
-                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform.Find("cardParent").transform);
                         card1.name = card.cardName;
                         card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
                         x += 112;
@@ -126,7 +135,7 @@ public class PlayPanel : MonoBehaviour
                 {
                     foreach (Card card in UnitedKingdom.Instance.HandCards)
                     {
-                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform.Find("cardParent").transform);
                         card1.name = card.cardName;
                         card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
                         x += 112;
@@ -137,7 +146,7 @@ public class PlayPanel : MonoBehaviour
                 {
                     foreach (Card card in Germany.Instance.HandCards)
                     {
-                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform.Find("cardParent").transform);
                         card1.name = card.cardName;
                         card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
                         x += 112;
@@ -148,7 +157,7 @@ public class PlayPanel : MonoBehaviour
                 {
                     foreach (Card card in Japan.Instance.HandCards)
                     {
-                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform.Find("cardParent").transform);
                         card1.name = card.cardName;
                         card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
                         x += 112;
@@ -159,7 +168,7 @@ public class PlayPanel : MonoBehaviour
                 {
                     foreach (Card card in Italy.Instance.HandCards)
                     {
-                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform);
+                        GameObject card1 = Instantiate(cardPrefab, new Vector3(x, y, z), this.transform.rotation, this.transform.Find("cardParent").transform);
                         card1.name = card.cardName;
                         card1.GetComponent<Image>().sprite = Resources.Load<Sprite>(card.imagePath);
                         x += 112;
@@ -172,11 +181,175 @@ public class PlayPanel : MonoBehaviour
         }
     }
 
+    // 清理之前创建的卡牌
+    private void ClearPreviousCards()
+    {
+        if (cardParent != null)
+        {
+            foreach (Transform child in cardParent)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+        else
+        {
+            Debug.LogError("Card parent Transform is not assigned!");
+        }
+    }
+
     public void OnClickDiscardButton()
     {
         if (CardClickHandler.selectedCard != null)
         {
-            Debug.Log("出牌："+ CardClickHandler.selectedCard.gameObject.name);
+            Debug.Log("出牌：" + CardClickHandler.selectedCard.gameObject.name);
+            switch(country)
+            {
+                case "America":
+                    {
+                        foreach (Card card in America.Instance.HandCards)
+                        {
+                            if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
+                            {//打出的卡牌有的进入弃牌堆有的不进入（比如状态卡）
+                                if (card.type == "状态卡")
+                                {
+                                    America.Instance.HandCards.Remove(card);
+                                    America.Instance.StatusCards.Add(card);
+                                }
+                                else if(card.type == "对策卡")
+                                {
+                                    America.Instance.HandCards.Remove(card);
+                                    America.Instance.CountermeasuresCards.Add(card);
+                                }
+                                else
+                                {
+                                    America.Instance.HandCards.Remove(card);
+                                    America.Instance.DiscardPile.Add(card);
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    break;
+                case "Soviet":
+                    {
+                        foreach (Card card in Soviet.Instance.HandCards)
+                        {
+                            if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
+                            {
+                                if (card.type == "状态卡")
+                                {
+                                    Soviet.Instance.HandCards.Remove(card);
+                                    Soviet.Instance.StatusCards.Add(card);
+                                }
+                                else if (card.type == "对策卡")
+                                {
+                                    Soviet.Instance.HandCards.Remove(card);
+                                    Soviet.Instance.CountermeasuresCards.Add(card);
+                                }
+                                else
+                                {
+                                    Soviet.Instance.HandCards.Remove(card);
+                                    Soviet.Instance.DiscardPile.Add(card);
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    break;
+                case "UnitedKingdom":
+                    {
+                        foreach (Card card in UnitedKingdom.Instance.HandCards)
+                        {
+                            if (card.type == "状态卡")
+                            {
+                                UnitedKingdom.Instance.HandCards.Remove(card);
+                                UnitedKingdom.Instance.StatusCards.Add(card);
+                            }
+                            else if (card.type == "对策卡")
+                            {
+                                UnitedKingdom.Instance.HandCards.Remove(card);
+                                UnitedKingdom.Instance.CountermeasuresCards.Add(card);
+                            }
+                            else
+                            {
+                                UnitedKingdom.Instance.HandCards.Remove(card);
+                                UnitedKingdom.Instance.DiscardPile.Add(card);
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                case "Germany":
+                    {
+                        foreach (Card card in Germany.Instance.HandCards)
+                        {
+                            if (card.type == "状态卡")
+                            {
+                                Germany.Instance.HandCards.Remove(card);
+                                Germany.Instance.StatusCards.Add(card);
+                            }
+                            else if (card.type == "对策卡")
+                            {
+                                Germany.Instance.HandCards.Remove(card);
+                                Germany.Instance.CountermeasuresCards.Add(card);
+                            }
+                            else
+                            {
+                                Germany.Instance.HandCards.Remove(card);
+                                Germany.Instance.DiscardPile.Add(card);
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                case "Japan":
+                    {
+                        foreach (Card card in Japan.Instance.HandCards)
+                        {
+                            if (card.type == "状态卡")
+                            {
+                                Japan.Instance.HandCards.Remove(card);
+                                Japan.Instance.StatusCards.Add(card);
+                            }
+                            else if (card.type == "对策卡")
+                            {
+                                Japan.Instance.HandCards.Remove(card);
+                                Japan.Instance.CountermeasuresCards.Add(card);
+                            }
+                            else
+                            {
+                                Japan.Instance.HandCards.Remove(card);
+                                Japan.Instance.DiscardPile.Add(card);
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                case "Italy":
+                    {
+                        foreach (Card card in Italy.Instance.HandCards)
+                        {
+                            if (card.type == "状态卡")
+                            {
+                                Italy.Instance.HandCards.Remove(card);
+                                Italy.Instance.StatusCards.Add(card);
+                            }
+                            else if (card.type == "对策卡")
+                            {
+                                Italy.Instance.HandCards.Remove(card);
+                                Italy.Instance.CountermeasuresCards.Add(card);
+                            }
+                            else
+                            {
+                                Italy.Instance.HandCards.Remove(card);
+                                Italy.Instance.DiscardPile.Add(card);
+                            }
+                            break;
+                        }
+                    }
+                    break;
+            }
+            SetUIHandCards();
         }
         else
         {
@@ -191,7 +364,7 @@ public class PlayPanel : MonoBehaviour
     }
     public void OnClickViewOtherStatusCardButton()
     {
-        GameObject panel= this.GetComponentInParent<Canvas>().transform.Find("StatusCardPanel").gameObject;
+        GameObject panel = this.GetComponentInParent<Canvas>().transform.Find("StatusCardPanel").gameObject;
         panel.SetActive(true);
         this.gameObject.SetActive(false);
     }
@@ -203,7 +376,7 @@ public class PlayPanel : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
-    public string Translate(string text)
+    public string TranslateCHtoEN(string text)
     {
         switch (text)
         {
@@ -224,6 +397,32 @@ public class PlayPanel : MonoBehaviour
                 break;
             case "意大利":
                 return "Italy";
+                break;
+        }
+        return null;
+    }
+
+    public string TranslateENtoCH(string text)
+    {
+        switch (text)
+        {
+            case "America":
+                return "美国";
+                break;
+            case "Soviet":
+                return "苏联";
+                break;
+            case "UnitedKingdom":
+                return "英国";
+                break;
+            case "Germany":
+                return "德国";
+                break;
+            case "Japan":
+                return "日本";
+                break;
+            case "Italy":
+                return "意大利";
                 break;
         }
         return null;

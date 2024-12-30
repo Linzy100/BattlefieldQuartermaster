@@ -17,7 +17,7 @@ public class PlateClickHandler : MonoBehaviour
     public List<Button> plateButtons = new List<Button>();
 
     // 设置透明区域不可点击的阈值
-    public float alphaHitTestMinimumThreshold = 0.5f;
+    public float alphaHitTestMinimumThreshold = 0.1f;
 
     void Start()
     {

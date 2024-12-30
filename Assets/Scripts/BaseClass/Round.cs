@@ -4,27 +4,27 @@ using UnityEngine;
 
 public enum TurnStage
 {
-    PrePlayStage,//堤齪ヶ論僇
-    PlayStage,//堤齪論僇
-    PreFlyStage,//滄俴ヶ論僇
-    FlyStage,//滄俴論僇
-    PreSupplyStage,//硃跤ヶ論僇
-    SupplyStage,//硃跤論僇
-    PreScoreStage,//數煦ヶ論僇
-    ScoreStage,//數煦論僇
-    PreGetCardStage,//類齪ヶ論僇
-    GetCardStage,//類齪論僇
-    PreThrowCardStage,//ィ齪ヶ論僇
-    ThrowCardStage//ィ齪論僇
+    PrePlayStage = 0,//堤齪ヶ論僇
+    PlayStage = 1,//堤齪論僇
+    PreFlyStage = 2,//滄俴ヶ論僇
+    FlyStage = 3,//滄俴論僇
+    PreSupplyStage = 4,//硃跤ヶ論僇
+    SupplyStage = 5,//硃跤論僇
+    PreScoreStage = 6,//數煦ヶ論僇
+    ScoreStage = 7,//數煦論僇
+    PreGetCardStage = 8,//類齪ヶ論僇
+    GetCardStage = 9,//類齪論僇
+    PreThrowCardStage = 10,//ィ齪ヶ論僇
+    ThrowCardStage = 11//ィ齪論僇
 }
 public enum CountryStage//堤齪佼唗
 {
-    Germany,
-    UnitedKingdom,
-    Japan,
-    Soviet,
-    Italy,
-    American
+    Germany = 0,
+    UnitedKingdom = 1,
+    Japan = 2,
+    Soviet = 3,
+    Italy = 4,
+    American = 5
 }
 public class Round
 {
