@@ -48,8 +48,8 @@ public class PlayPanel : MonoBehaviour
 
     public void SetUIScoreAndArmyNavy(string country)
     {
-        Score_Allies.text = "同盟国得分：" + ScoreManager.Instance.Score_Allies;
-        Score_Axis.text = "轴心国得分：" + ScoreManager.Instance.Score_Axis;
+        Score_Allies.text = "同盟国得分：" + ScoreManager.Instance.GetScore("Allies");
+        Score_Axis.text = "轴心国得分：" + ScoreManager.Instance.GetScore("Axis");
 
         // 根据country参数动态获取相应国家的实例
         switch (country)

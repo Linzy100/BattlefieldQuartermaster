@@ -255,17 +255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &48818458
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,17 +522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &67071692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,17 +1134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &236290652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,15 +1328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba17395d79c65dd4b96b210cc2b8aeb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  country: Italy
-  camp: Axis
-  army: 4
-  navy: 3
-  DiscardPile: []
-  CardPile: []
-  HandCards: []
-  StatusCards: []
-  CountermeasuresCards: []
 --- !u!114 &248068805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1382,15 +1340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74422f093ea697141a68e943a148d187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  country: Japan
-  camp: Axis
-  army: 5
-  navy: 5
-  DiscardPile: []
-  CardPile: []
-  HandCards: []
-  StatusCards: []
-  CountermeasuresCards: []
 --- !u!114 &248068806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1403,15 +1352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9084b98bfab4be643a3d2c6be7377614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  country: Germany
-  camp: Axis
-  army: 7
-  navy: 3
-  DiscardPile: []
-  CardPile: []
-  HandCards: []
-  StatusCards: []
-  CountermeasuresCards: []
 --- !u!114 &248068807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1424,15 +1364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71fb1af84e03f06448d520e3c8757f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  country: UnitedKingdom
-  camp: Allies
-  army: 5
-  navy: 5
-  DiscardPile: []
-  CardPile: []
-  HandCards: []
-  StatusCards: []
-  CountermeasuresCards: []
 --- !u!114 &248068808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1445,15 +1376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e2f8d0e23ae394988783f7cdcf640d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  country: Soviet
-  camp: Allies
-  army: 7
-  navy: 1
-  DiscardPile: []
-  CardPile: []
-  HandCards: []
-  StatusCards: []
-  CountermeasuresCards: []
 --- !u!114 &248068809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1466,15 +1388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763736398fc938a43815ad16bd338e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  country: America
-  camp: Allies
-  army: 5
-  navy: 6
-  DiscardPile: []
-  CardPile: []
-  HandCards: []
-  StatusCards: []
-  CountermeasuresCards: []
 --- !u!114 &248068810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1487,8 +1400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da9275d3e4cdf14bb71729ed90f0e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score_Allies: 0
-  Score_Axis: 0
 --- !u!1 &251722799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,17 +1666,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
+--- !u!1 &301901604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 301901606}
+  - component: {fileID: 301901605}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &301901605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301901604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b826a132dbf88ad4faee722295489ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedPlate:
+    <plateId>k__BackingField: 0
+    <plateName>k__BackingField: 
+    <plateType>k__BackingField: 
+    <takeStatuByCountry1>k__BackingField: 
+    <takeStatuByCountry2>k__BackingField: 
+    <takeStatuByCountry3>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
+  selectedCard:
+    id: 0
+    cardName: 
+    introduce: 
+    type: 
+    country: 
+    towords: 0
+    imagePath: 
+    takeActionOfPlay: 0
+    takeActionOfFly: 0
+    takeActionOfSupply: 0
+    takeActionOfScore: 0
+    takeActionOfGetCard: 0
+    takeActionOfThrowCard: 0
+    isNeedToSearch: 1
+    isSearchCompleted: 0
+--- !u!4 &301901606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301901604}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1288038339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &308117539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,17 +2006,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!114 &334483956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2056,17 +2018,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &337603865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,17 +2151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &343585909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,17 +2359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &383345120
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,17 +2493,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!114 &383345126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2587,17 +2505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &393524028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,6 +2896,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437229251}
   m_CullTransparentMesh: 1
+--- !u!1 &441285174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441285175}
+  - component: {fileID: 441285176}
+  m_Layer: 0
+  m_Name: CarFuncManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441285175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441285174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1288038339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &441285176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441285174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1f8b7e0bd31764d9bc94f060980587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curCard:
+    id: 0
+    cardName: 
+    introduce: 
+    type: 
+    country: 
+    towords: 0
+    imagePath: 
+    takeActionOfPlay: 0
+    takeActionOfFly: 0
+    takeActionOfSupply: 0
+    takeActionOfScore: 0
+    takeActionOfGetCard: 0
+    takeActionOfThrowCard: 0
+    isNeedToSearch: 1
+    isSearchCompleted: 0
 --- !u!1 &447688674
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,17 +3089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &461182743
 GameObject:
   m_ObjectHideFlags: 0
@@ -3533,17 +3489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &497277363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3677,17 +3622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &510784791
 GameObject:
   m_ObjectHideFlags: 0
@@ -4173,17 +4107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &578857835
 GameObject:
   m_ObjectHideFlags: 0
@@ -4451,17 +4374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &596418975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,17 +4507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &607568367
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,17 +4640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &660642196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4883,17 +4773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &671141594
 GameObject:
   m_ObjectHideFlags: 0
@@ -5092,6 +4971,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671689216}
   m_CullTransparentMesh: 1
+--- !u!1 &674441225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674441226}
+  - component: {fileID: 674441227}
+  m_Layer: 0
+  m_Name: AdjacencyMatrixManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &674441226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674441225}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1288038339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674441227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674441225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70353ef4178543c4dbe59a7985d44f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &682211696
 GameObject:
   m_ObjectHideFlags: 0
@@ -5394,17 +5317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &711580557
 GameObject:
   m_ObjectHideFlags: 0
@@ -5763,6 +5675,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758466798}
   m_CullTransparentMesh: 1
+--- !u!1 &762300003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762300004}
+  - component: {fileID: 762300005}
+  m_Layer: 0
+  m_Name: RoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762300004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762300003}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1288038339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &762300005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762300003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260706d88920d584eb8dab46815e1cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779585640
 GameObject:
   m_ObjectHideFlags: 0
@@ -6155,17 +6111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &849191120
 GameObject:
   m_ObjectHideFlags: 0
@@ -6224,16 +6169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a5e86d741898447981e10455e5c791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 5926725527733850484, guid: 144c9c0d669f0764fbc660a9e984d98e, type: 3}
-  country: 
-  other_country: []
-  country1: {fileID: 0}
-  country2: {fileID: 0}
-  country3: {fileID: 0}
-  country4: {fileID: 0}
-  country5: {fileID: 0}
-  countries: []
-  count: 0
 --- !u!114 &849191123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6380,6 +6315,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849835222}
   m_CullTransparentMesh: 1
+--- !u!1 &853624208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 853624209}
+  - component: {fileID: 853624210}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &853624209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853624208}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1288038339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &853624210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853624208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c6bb765219cdc47b71273a723a9350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &878645659
 GameObject:
   m_ObjectHideFlags: 0
@@ -6650,6 +6629,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883118864}
   m_CullTransparentMesh: 1
+--- !u!1 &898628354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 898628355}
+  - component: {fileID: 898628356}
+  m_Layer: 0
+  m_Name: PlateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &898628355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898628354}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1288038339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &898628356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898628354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962b1a2d701a1604096c22efb33833b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plateInfo: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
+  curPlateInfo:
+    <plateId>k__BackingField: 0
+    <plateName>k__BackingField: 
+    <plateType>k__BackingField: 
+    <takeStatuByCountry1>k__BackingField: 
+    <takeStatuByCountry2>k__BackingField: 
+    <takeStatuByCountry3>k__BackingField: 
+    <takeStatuByCampus>k__BackingField: 
+    <isAlliesSupply>k__BackingField: 0
+    <isAxisSupply>k__BackingField: 0
+    <isAlliesScore>k__BackingField: 0
+    <isAxisScore>k__BackingField: 0
+    <isInSupply>k__BackingField: 0
 --- !u!1 &920552047
 GameObject:
   m_ObjectHideFlags: 0
@@ -6917,17 +6954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &931905255
 GameObject:
   m_ObjectHideFlags: 0
@@ -7061,17 +7087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &947310510
 GameObject:
   m_ObjectHideFlags: 0
@@ -7205,17 +7220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &950755767
 GameObject:
   m_ObjectHideFlags: 0
@@ -7520,14 +7524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f21639d108e2aa429e9dbd1d373b2cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  country: 
-  other_country: []
-  country1: {fileID: 0}
-  country2: {fileID: 0}
-  country3: {fileID: 0}
-  country4: {fileID: 0}
-  country5: {fileID: 0}
-  countries: []
 --- !u!1 &962668607
 GameObject:
   m_ObjectHideFlags: 0
@@ -7934,17 +7930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1036922676
 GameObject:
   m_ObjectHideFlags: 0
@@ -8078,17 +8063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1070944855
 GameObject:
   m_ObjectHideFlags: 0
@@ -8481,17 +8455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1105847630
 GameObject:
   m_ObjectHideFlags: 0
@@ -8696,17 +8659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1167886891
 GameObject:
   m_ObjectHideFlags: 0
@@ -8907,16 +8859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5004147fde74b4f4cad6810dc925acdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 561751817051643670, guid: 3dc529dfaecb0a343852acd156422cf6, type: 3}
-  country: 
-  country_image: {fileID: 950755768}
-  round_text: {fileID: 2102327102}
-  current_round: 
-  round: 1
-  Score_Allies: {fileID: 2021236735}
-  Score_Axis: {fileID: 102689338}
-  RemainingArmy: {fileID: 48818459}
-  RemainingNavy: {fileID: 1910414746}
 --- !u!114 &1177791884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9088,17 +9030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1201446149
 GameObject:
   m_ObjectHideFlags: 0
@@ -9232,17 +9163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1220129092
 GameObject:
   m_ObjectHideFlags: 0
@@ -9376,17 +9296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1225330356
 GameObject:
   m_ObjectHideFlags: 0
@@ -9654,17 +9563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1245251963
 GameObject:
   m_ObjectHideFlags: 0
@@ -10022,6 +9920,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284332329}
   m_CullTransparentMesh: 1
+--- !u!1 &1288038337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1288038339}
+  - component: {fileID: 1288038340}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1288038339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288038337}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 168.89151, y: 275.83185, z: -0.30218953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 762300004}
+  - {fileID: 2143115904}
+  - {fileID: 853624209}
+  - {fileID: 898628355}
+  - {fileID: 441285175}
+  - {fileID: 674441226}
+  - {fileID: 301901606}
+  - {fileID: 1965237441}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1288038340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288038337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef97460345b1eb34695808f9df0c8c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plateMananger: {fileID: 898628356}
+  cardManager: {fileID: 0}
+  roundManager: {fileID: 762300005}
+  uIManager: {fileID: 301901605}
+  plateUnitManager: {fileID: 1965237440}
+  adjacencyMatrixManager: {fileID: 674441227}
 --- !u!1 &1329151034
 GameObject:
   m_ObjectHideFlags: 0
@@ -10123,7 +10079,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4380bc75cdb7234ba40fabddf35f63f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MapFragments: []
 --- !u!1 &1337583784
 GameObject:
   m_ObjectHideFlags: 0
@@ -10393,17 +10348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1354619061
 GameObject:
   m_ObjectHideFlags: 0
@@ -10537,17 +10481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1358338016
 GameObject:
   m_ObjectHideFlags: 0
@@ -10756,17 +10689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1375743126
 GameObject:
   m_ObjectHideFlags: 0
@@ -11168,17 +11090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1406205264
 GameObject:
   m_ObjectHideFlags: 0
@@ -11312,17 +11223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1432242562
 GameObject:
   m_ObjectHideFlags: 0
@@ -11456,17 +11356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1445214629
 GameObject:
   m_ObjectHideFlags: 0
@@ -11902,17 +11791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1480375336
 GameObject:
   m_ObjectHideFlags: 0
@@ -12451,17 +12329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1603846888
 GameObject:
   m_ObjectHideFlags: 0
@@ -12724,9 +12591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 160e8410875f1fc408bfc57eb768424d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startButton: {fileID: 1445214631}
-  exitButton: {fileID: 1284332331}
-  settingButton: {fileID: 308117541}
 --- !u!1 &1623858366
 GameObject:
   m_ObjectHideFlags: 0
@@ -12860,17 +12724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1632054213
 GameObject:
   m_ObjectHideFlags: 0
@@ -13004,17 +12857,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1638290622
 GameObject:
   m_ObjectHideFlags: 0
@@ -13148,17 +12990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1653704340
 GameObject:
   m_ObjectHideFlags: 0
@@ -13292,17 +13123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1687359579
 GameObject:
   m_ObjectHideFlags: 0
@@ -13436,17 +13256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1739540571
 GameObject:
   m_ObjectHideFlags: 0
@@ -13656,17 +13465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1799544901
 GameObject:
   m_ObjectHideFlags: 0
@@ -14408,17 +14206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1873907836
 GameObject:
   m_ObjectHideFlags: 0
@@ -15589,17 +15376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1942826808
 GameObject:
   m_ObjectHideFlags: 0
@@ -15636,6 +15412,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1965237439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965237441}
+  - component: {fileID: 1965237440}
+  m_Layer: 0
+  m_Name: PlateUnitManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1965237440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965237439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ecd64e82c832041ab9518b0040eda7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1965237441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965237439}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1288038339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1966531808
 GameObject:
   m_ObjectHideFlags: 0
@@ -15769,17 +15589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &1968803442
 GameObject:
   m_ObjectHideFlags: 0
@@ -16489,17 +16298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &2005081431
 GameObject:
   m_ObjectHideFlags: 0
@@ -16560,17 +16358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3c591b234759c74d9739f1cdd4c5682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  country: 
-  total_country: []
-  AmericaButton: {fileID: 251722800}
-  SovietButton: {fileID: 1799544902}
-  UnitedKingdomButton: {fileID: 2114998843}
-  GermanyButton: {fileID: 431462216}
-  JapanButton: {fileID: 953913254}
-  ItalyButton: {fileID: 1070944856}
-  RandomSelectButton: {fileID: 1882390110}
-  ConfirmButton: {fileID: 1167886893}
-  text: {fileID: 184068632}
 --- !u!114 &2005081434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16876,17 +16663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &2015663580
 GameObject:
   m_ObjectHideFlags: 0
@@ -17020,17 +16796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &2021236734
 GameObject:
   m_ObjectHideFlags: 0
@@ -17298,17 +17063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &2102327101
 GameObject:
   m_ObjectHideFlags: 0
@@ -17859,17 +17613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &2137647263
 GameObject:
   m_ObjectHideFlags: 0
@@ -18015,17 +17758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
 --- !u!1 &2139765336
 GameObject:
   m_ObjectHideFlags: 0
@@ -18159,17 +17891,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b4a646696c8d242bd35329446ff192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: c06c6307459c2ee49bb6569e1dca634f, type: 2}
-  plateId: 0
-  plateName: 
-  plateType: 
-  takeStatuByCountry: 
-  takeStatuByCampus: 
-  isAlliesSupply: 0
-  isAxisSupply: 0
-  isAlliesScore: 0
-  isAxisScore: 0
-  isInSupply: 0
+--- !u!1 &2143115903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2143115904}
+  - component: {fileID: 2143115905}
+  m_Layer: 0
+  m_Name: CardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2143115904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143115903}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1288038339}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2143115905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143115903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908a04a3213c1034291a0cee855de1e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardDatas:
+    id: 0
+    cardName: 
+    introduce: 
+    type: 
+    country: 
+    towords: 0
+    imagePath: 
+    takeActionOfPlay: 0
+    takeActionOfFly: 0
+    takeActionOfSupply: 0
+    takeActionOfScore: 0
+    takeActionOfGetCard: 0
+    takeActionOfThrowCard: 0
+    isNeedToSearch: 1
+    isSearchCompleted: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -18177,3 +17958,4 @@ SceneRoots:
   - {fileID: 248068803}
   - {fileID: 236290655}
   - {fileID: 1574944367}
+  - {fileID: 1288038339}

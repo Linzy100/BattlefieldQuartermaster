@@ -23,24 +23,30 @@ public class plateData
     public string plateType { get; private set; }
 
     [field: SerializeField]
-    public string takeStatuByCountry { get; private set; }
+    public string takeStatuByCountry1 { get; set; }
 
     [field: SerializeField]
-    public string takeStatuByCampus { get; private set; }
+    public string takeStatuByCountry2 { get; set; }
 
     [field: SerializeField]
-    public bool isAlliesSupply { get; private set; }
+    public string takeStatuByCountry3 { get; set; }
 
     [field: SerializeField]
-    public bool isAxisSupply { get; private set; }
+    public string takeStatuByCampus { get; set; }
 
     [field: SerializeField]
-    public bool isAlliesScore { get; private set; }
+    public bool isAlliesSupply { get; set; }
 
     [field: SerializeField]
-    public bool isAxisScore { get; private set; }
+    public bool isAxisSupply { get; set; }
 
     [field: SerializeField]
-    public bool isInSupply { get; private set; }
+    public bool isAlliesScore { get; set; }
+
+    [field: SerializeField]
+    public bool isAxisScore { get; set; }
+
+    [field: SerializeField]
+    public bool isInSupply { get; set; }
 
 }
