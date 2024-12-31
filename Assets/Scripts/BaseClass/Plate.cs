@@ -20,7 +20,7 @@ public class Plate//地块情况
     public bool isInSupply = false;//是否处于补给状态
 
     
-
+    
     
 
 }

@@ -30,10 +30,7 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
     // 保证构造函数是私有的，外部无法直接创建实例
     private SearchOperation() { }
 
-    public Card curCard;
     private const int N = 51;
-    string[] nationName = new string[3]; // 当前国家名字
-    string campusName; // 当前国家所属阵营
     private int[,] adjacencyMatrix = new int[N, N]; // 矩阵
     private Dictionary<string, int> regionMap = new Dictionary<string, int>()
     {
@@ -51,12 +48,12 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
     List<plateData> plates; // 所有的板块信息
 
     // 查找可以设置陆军的板块
-    public List<plateData> SearchSetArmy(string nationName, string campusName, List<plateData> plates)
+    public List<plateData> SearchSetArmy(string nationName, List<plateData> plates, string campusName)
     {
         List<plateData> isSetArmy = new List<plateData>(); // 可创建的陆军
         List<int> searchById = new List<int>(); // 存放的要查找后的板块id
-        isSetArmy = SearchMethod(searchById);
-        canSetPlate(isSetArmy, searchById);
+        isSetArmy = SearchMethod(searchById, nationName, campusName);
+        canSetPlate(isSetArmy, searchById,campusName);
         foreach (plateData plate in isSetArmy)
         {
             if (!plate.plateType.Equals("陆地"))
@@ -68,12 +65,12 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
     }
 
     // 陆地攻击判断
-    public List<plateData> SearchAttackArmy()
+    public List<plateData> SearchAttackArmy(string nationName, string campusName)
     {
         List<plateData> isAttackedArmy = new List<plateData>(); // 可被攻击的陆军
         List<int> searchById = new List<int>(); // 存放的要查找后的板块id
-        isAttackedArmy = SearchMethod(searchById);
-        canAttackPlate(isAttackedArmy, searchById);
+        isAttackedArmy = SearchMethod(searchById, nationName, campusName);
+        canAttackPlate(isAttackedArmy, searchById,campusName);
         foreach (plateData plate in isAttackedArmy)
         {
             if (!plate.plateType.Equals("陆地"))
@@ -85,12 +82,12 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
     }
 
     // 创建海军
-    public List<plateData> SearchSetNavy(string nationName, string campusName, List<Plate> plates, int[,] adjacencyMatrix, Dictionary<string, int> regionMap)
+    public List<plateData> SearchSetNavy(string nationName,List<plateData> plates, string campusName)
     {
         List<plateData> isSetNavy = new List<plateData>(); // 可创建的海军
         List<int> searchById = new List<int>(); // 存放的要查找后的板块id
-        isSetNavy = SearchMethod(searchById);
-        canSetPlate(isSetNavy, searchById);
+        isSetNavy = SearchMethod(searchById, nationName, campusName);
+        canSetPlate(isSetNavy, searchById,campusName);
         foreach (plateData plate in isSetNavy)
         {
             if (!plate.plateType.Equals("海洋"))
@@ -102,12 +99,12 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
     }
 
     // 海洋攻击判断
-    public List<plateData> SearchAttackNavy()
+    public List<plateData> SearchAttackNavy(string nationName, string campusName)
     {
         List<plateData> isAttackedNavy = new List<plateData>(); // 可被攻击的海军
         List<int> searchById = new List<int>(); // 存放的要查找后的板块id
-        isAttackedNavy = SearchMethod(searchById);
-        canAttackPlate(isAttackedNavy, searchById);
+        isAttackedNavy = SearchMethod(searchById, nationName, campusName);
+        canAttackPlate(isAttackedNavy, searchById,campusName);
         foreach (plateData plate in isAttackedNavy)
         {
             if (!plate.plateType.Equals("海洋"))
@@ -118,7 +115,7 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
         return isAttackedNavy;
     }
 
-    public List<plateData> SearchMethod(List<int> searchById)
+    public List<plateData> SearchMethod(List<int> searchById,string nationName, string campusName)
     {
         List<plateData> returnList = new List<plateData>();
         List<int> temp = new List<int>();
@@ -136,7 +133,7 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
         // 在邻接矩阵查找
         foreach (int id in temp)
         {
-            foreach (int index in GetNeighborsById(id))
+            foreach (int index in GetNeighborsById(id,campusName))
             {
                 if (!searchById.Contains(index))
                     searchById.Add(index);
@@ -154,7 +151,7 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
         return returnList;
     }
 
-    private void canSetPlate(List<plateData> returnList, List<int> searchById)
+    private void canSetPlate(List<plateData> returnList, List<int> searchById, string campusName)
     {
         foreach (int id in searchById)
         {
@@ -169,7 +166,7 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
         }
     }
 
-    private void canAttackPlate(List<plateData> returnList, List<int> searchById)
+    private void canAttackPlate(List<plateData> returnList, List<int> searchById,string campusName)
     {
         foreach (int id in searchById)
         {
@@ -184,7 +181,7 @@ public class SearchOperation : MonoBehaviour    // 搜寻目标
         }
     }
 
-    public List<int> GetNeighborsById(int id)
+    public List<int> GetNeighborsById(int id,string campusName)
     {
         List<int> neighbors = new List<int>();
         if (id >= 0 && id < N)

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,6 +40,25 @@ public class CardFuncManager : MonoBehaviour
     // 执行搜寻操作
     private void PerformSearchOperation()
     {
+        List<plateData> p = new List<plateData>();
+        //创建搜索列表
+        if ( curCard.cardName.Equals("建设陆军") )
+        {
+            p = SearchOperation.Instance.SearchSetArmy(GameManager.Instance.roundManager.returnCurCountryName(),GameManager.Instance.plateMananger.returnAllPlateInfo(),GameManager.Instance.roundManager.returnCurCampName());
+        }
+        else if ( curCard.cardName.Equals("建设海军") )
+        {
+            p = SearchOperation.Instance.SearchSetNavy(GameManager.Instance.roundManager.returnCurCountryName(), GameManager.Instance.plateMananger.returnAllPlateInfo(),GameManager.Instance.roundManager.returnCurCampName());
+        } 
+        else if ( curCard.cardName.Equals("发起陆战") )
+        {
+        }
+        else if ( curCard.cardName.Equals("发起海战") )
+        {
+
+        }
+
+
         if ( curCard.affectingTarget == "other" )
         {
             if( curCard.affectingTargetType == "Military")
@@ -47,7 +67,10 @@ public class CardFuncManager : MonoBehaviour
             }
             else if (curCard.affectingTargetType == "Plate")
             {
-                curPlate = GameManager.Instance.uIManager.selectedPlate;
+                curPlate = p.Contains(GameManager.Instance.uIManager.selectedPlate)
+               ? GameManager.Instance.uIManager.selectedPlate
+               : null;
+
             }
         }
 

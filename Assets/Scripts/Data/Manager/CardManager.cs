@@ -481,7 +481,7 @@ public class CardManager : MonoBehaviour
         AddCardsToList();
     }
 
-    void AddCardsToList()
+    void AddCardsToList()   //初始化卡牌列表
     {
         foreach (var field in GetType().GetFields())
         {
