@@ -12,7 +12,9 @@ public class Plate:MonoBehaviour//地块情况
     public int plateId;//板块Id
     public string plateName;//板块名称
     public string plateType;//板块类型
-    public string takeStatuByCountry = null;//被占领情况（国家）
+    public string takeStatuByCountry1 = null;//被占领情况（国家）
+    public string takeStatuByCountry2 = null;//被占领情况（国家）
+    public string takeStatuByCountry3 = null;//被占领情况（国家）
     public string takeStatuByCampus = null;//被占领情况（阵营）
     public bool isAlliesSupply = false;//是否为同盟国补给点
     public bool isAxisSupply = false;//是否为轴心国补给点
@@ -51,7 +53,9 @@ public class Plate:MonoBehaviour//地块情况
                         plateId = eachDate.plateId;
                         plateName = eachDate.plateName;
                         plateType = eachDate.plateType;
-                        takeStatuByCountry = eachDate.takeStatuByCountry;
+                        takeStatuByCountry1 = eachDate.takeStatuByCountry1;
+                        takeStatuByCountry2 = eachDate.takeStatuByCountry2;
+                        takeStatuByCountry3 = eachDate.takeStatuByCountry3;
                         takeStatuByCampus = eachDate.takeStatuByCampus;
                         isAlliesSupply = eachDate.isAlliesSupply;
                         isAlliesScore = eachDate.isAlliesScore;
@@ -66,7 +70,9 @@ public class Plate:MonoBehaviour//地块情况
                         plateId = eachDate.plateId;
                         plateName = eachDate.plateName;
                         plateType = eachDate.plateType;
-                        takeStatuByCountry = eachDate.takeStatuByCountry;
+                        takeStatuByCountry1 = eachDate.takeStatuByCountry1;
+                        takeStatuByCountry2 = eachDate.takeStatuByCountry2;
+                        takeStatuByCountry3 = eachDate.takeStatuByCountry3;
                         takeStatuByCampus = eachDate.takeStatuByCampus;
                         isAlliesSupply = eachDate.isAlliesSupply;
                         isAlliesScore = eachDate.isAlliesScore;

@@ -19,4 +19,15 @@ public class ScoreManager : Singleton<ScoreManager>
     {
 
     }
+
+    public void AddAxisScore(int score)
+    {
+        Score_Axis += score;
+    }
+
+    public void AddAlliesScore(int score)
+    {
+        Score_Allies += score;
+    }
+
 }

@@ -18,4 +18,29 @@ public class Card :MonoBehaviour
     public bool takeActionOfScore;//是否在计分回合执行
     public bool takeActionOfGetCard;//是否在摸牌回合执行
     public bool takeActionOfThrowCard;//是否在弃牌牌回合执行
+    public bool isNeedToSearch = true;//是否需要寻找目标
+    public bool isFinishingSearch = false;//是否完成寻找目标
+    public string affectingTarget = "none";//是否作用在自己身上
+    public string affectingTargetType = "none";//作用对象类型（军队，地块）
+
+
+    // 设置军队信息
+    public void SetMilitaryInfo()
+    {
+    }
+
+    // 设置选择的地块信息
+    public void SetSelectedPlate()
+    {
+    }
+
+    // 设置卡牌信息
+    public void SetCardName()
+    {
+    }
+
+    public virtual void func()
+    {
+
+    }
 }

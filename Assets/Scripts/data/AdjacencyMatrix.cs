@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdjacencyMatrix : MonoBehaviour
+public class AdjacencyMatrix : Singleton<AdjacencyMatrix>
 {
     // 区域数量
     private const int N = 51;
@@ -115,16 +115,15 @@ public class AdjacencyMatrix : MonoBehaviour
         {"里海", new List<string> {"乌克兰", "哈萨克斯坦", "中东"}}
     };
 
-
-    // Unity Start 方法
-    void Start()
+    // 初始化邻接矩阵
+    public void InitializeMatrix()
     {
         FillMatrix();
-        PrintMatrix(adjacencyMatrix, "邻接矩阵");
+        Debug.Log("邻接矩阵已初始化");
     }
 
     // 填充邻接矩阵
-    void FillMatrix()
+    public void FillMatrix()
     {
         foreach (var entry in relationships)
         {
@@ -153,7 +152,7 @@ public class AdjacencyMatrix : MonoBehaviour
     }
 
     // 更新矩阵值
-    void UpdateMatrix(string regionA, string regionB, int value)
+    public void UpdateMatrix(string regionA, string regionB, int value)
     {
         if (regionMap.ContainsKey(regionA) && regionMap.ContainsKey(regionB))
         {
@@ -179,8 +178,32 @@ public class AdjacencyMatrix : MonoBehaviour
         }
     }
 
-    // 打印矩阵
-    void PrintMatrix(int[,] matrix, string title)
+    // 获取相邻区域的 ID（返回与指定区域相邻的区域 ID 列表）
+    public List<int> GetAdjacentRegionIds(int regionId)
+    {
+        List<int> adjacentRegionIds = new List<int>();
+
+        // 检查传入的区域 ID 是否有效
+        if (regionId < 0 || regionId >= N)
+        {
+            Debug.Log($"无效的区域 ID: {regionId}");
+            return adjacentRegionIds;
+        }
+
+        // 遍历邻接矩阵的行，找到与该区域 ID 相邻的区域
+        for (int j = 0; j < N; j++)
+        {
+            if (adjacencyMatrix[regionId, j] != 0) // 如果邻接矩阵的值不为 0，表示有邻接关系
+            {
+                adjacentRegionIds.Add(j);
+            }
+        }
+
+        return adjacentRegionIds;
+    }
+
+    // 打印邻接矩阵
+    public void PrintMatrix(string title)
     {
         Debug.Log(title);
         for (int i = 0; i < N; i++)
@@ -188,10 +211,29 @@ public class AdjacencyMatrix : MonoBehaviour
             string row = "";
             for (int j = 0; j < N; j++)
             {
-                row += matrix[i, j] + " ";
+                row += adjacencyMatrix[i, j] + " ";
             }
             Debug.Log(row);
         }
     }
-}
 
+    // 更新区域间的关系
+    public void UpdateRegionRelation(string regionA, string regionB, int value)
+    {
+        UpdateMatrix(regionA, regionB, value);
+        Debug.Log($"矩阵已更新：{regionA} 与 {regionB} 的关系值为 {value}");
+    }
+
+    // 返回整个邻接矩阵
+    public int[,] GetAdjacencyMatrix()
+    {
+        return adjacencyMatrix;
+    }
+
+
+    // Unity Start 方法
+    void Awake()
+    {
+        InitializeMatrix();
+    }
+}

@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayPanel : MonoBehaviour
+public class PlayPanel : Singleton<PlayPanel>
 {
     public GameObject cardPrefab;
 
@@ -22,6 +22,8 @@ public class PlayPanel : MonoBehaviour
     public TMP_Text RemainingNavy;
 
     public Transform cardParent;
+
+    public int foldCardCount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -182,7 +184,7 @@ public class PlayPanel : MonoBehaviour
     }
 
     // 清理之前创建的卡牌
-    private void ClearPreviousCards()
+    public void ClearPreviousCards()
     {
         if (cardParent != null)
         {
@@ -197,8 +199,38 @@ public class PlayPanel : MonoBehaviour
         }
     }
 
+    public void SetUITroop(string plateName)
+    {
+        //在playPanel下找到名为plateName的物体
+        GameObject plate = this.transform.Find("cover/"+ plateName).gameObject;
+        //在该物体下找到名为troop的物体
+        GameObject troop = plate.transform.Find("Troops").gameObject;
+        troop.gameObject.SetActive(true);
+        //将troop下所有子物体添加到一个列表里
+        List<GameObject> troopChildren = new List<GameObject>();
+        foreach (Transform child in troop.transform)
+        {
+            troopChildren.Add(child.gameObject);
+        }
+        //检查子物体image组件图片设置是否为空，如果为空则添加指定图片，不为空则继续检索
+        foreach (GameObject child in troopChildren)
+        {
+            if (child.GetComponent<Image>().sprite == null)
+            {
+                child.gameObject.SetActive(true);
+                child.GetComponent<Image>().sprite = Resources.Load<Sprite>("Art/Tokens/TokenGermanyTank");
+                child.gameObject.name = plateName + "TokenGermanyTank";
+                break;
+            }
+        }
+    }
+
     public void OnClickDiscardButton()
     {
+        if (RoundManager.Instance.returnCurCountryName() != country)
+            return;
+        if (RoundManager.Instance.round.turnStage != TurnStage.PlayStage && RoundManager.Instance.round.turnStage != TurnStage.ThrowCardStage)
+            return;
         if (CardClickHandler.selectedCard != null)
         {
             Debug.Log("出牌：" + CardClickHandler.selectedCard.gameObject.name);
@@ -212,19 +244,29 @@ public class PlayPanel : MonoBehaviour
                              if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
                             {//打出的卡牌有的进入弃牌堆有的不进入（比如状态卡）
                                 if (card.type == "状态卡")
-                                {//remove函数有问题
+                                {
                                     America.Instance.HandCards.RemoveAt(i);
                                     America.Instance.StatusCards.Add(card);
+                                    //返回到UIManager，同步selectedCard值为当前选择卡牌
+                                    UIManager.Instance.CardGetter(card.id);
+                                    //执行卡牌效果，通过UIManager.Instance.selectedCard的卡牌在CardFuncManager中查找并执行对应卡牌效果
+                                    //CardFuncManager.Instance.playCard();
                                 }
                                 else if(card.type == "对策卡")
                                 {
                                     America.Instance.HandCards.RemoveAt(i);
                                     America.Instance.CountermeasuresCards.Add(card);
+                                    //执行卡牌效果
+                                    UIManager.Instance.CardGetter(card.id);
+                                    //CardFuncManager.Instance.playCard();
                                 }
                                 else
                                 {
                                     America.Instance.HandCards.RemoveAt(i);
                                     America.Instance.DiscardPile.Add(card);
+                                    //执行卡牌效果
+                                    UIManager.Instance.CardGetter(card.id);
+                                    //CardFuncManager.Instance.playCard();
                                 }
                                 break;
                             }
@@ -263,22 +305,25 @@ public class PlayPanel : MonoBehaviour
                         for (int i = UnitedKingdom.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
                             Card card = UnitedKingdom.Instance.HandCards[i];
-                            if (card.type == "状态卡")
+                            if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
                             {
-                                UnitedKingdom.Instance.HandCards.RemoveAt(i);
-                                UnitedKingdom.Instance.StatusCards.Add(card);
+                                if (card.type == "状态卡")
+                                {
+                                    UnitedKingdom.Instance.HandCards.RemoveAt(i);
+                                    UnitedKingdom.Instance.StatusCards.Add(card);
+                                }
+                                else if (card.type == "对策卡")
+                                {
+                                    UnitedKingdom.Instance.HandCards.RemoveAt(i);
+                                    UnitedKingdom.Instance.CountermeasuresCards.Add(card);
+                                }
+                                else
+                                {
+                                    UnitedKingdom.Instance.HandCards.RemoveAt(i);
+                                    UnitedKingdom.Instance.DiscardPile.Add(card);
+                                }
+                                break;
                             }
-                            else if (card.type == "对策卡")
-                            {
-                                UnitedKingdom.Instance.HandCards.RemoveAt(i);
-                                UnitedKingdom.Instance.CountermeasuresCards.Add(card);
-                            }
-                            else
-                            {
-                                UnitedKingdom.Instance.HandCards.RemoveAt(i);
-                                UnitedKingdom.Instance.DiscardPile.Add(card);
-                            }
-                            break;
                         }
                     }
                     break;
@@ -287,22 +332,64 @@ public class PlayPanel : MonoBehaviour
                         for (int i = Germany.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
                             Card card = Germany.Instance.HandCards[i];
-                            if (card.type == "状态卡")
+                            if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
                             {
-                                Germany.Instance.HandCards.RemoveAt(i);
-                                Germany.Instance.StatusCards.Add(card);
+                                if (RoundManager.Instance.round.turnStage == TurnStage.PlayStage)
+                                {//出牌阶段，执行出牌效果
+                                    if (card.type == "状态卡")
+                                    {
+                                        Germany.Instance.HandCards.RemoveAt(i);
+                                        Germany.Instance.StatusCards.Add(card);
+                                    }
+                                    else if (card.type == "对策卡")
+                                    {
+                                        Germany.Instance.HandCards.RemoveAt(i);
+                                        Germany.Instance.CountermeasuresCards.Add(card);
+                                    }
+                                    else
+                                    {
+                                        if (card.id == 1101)
+                                        {
+                                            if (CardFuncManager.Instance.Germany1101() == true)
+                                            {
+                                                SetUITroop(PlateClickHandler.selectedPlate.name);
+                                                Germany.Instance.HandCards.RemoveAt(i);
+                                                Germany.Instance.DiscardPile.Add(card);
+                                                //切换到下一阶段
+                                                RoundManager.Instance.Statetransition();
+                                            }
+                                        }
+                                        else if (card.id == 1102)
+                                        {
+
+                                        }
+                                        else if (card.id == 1103)
+                                        {
+
+                                        }
+                                        else if (card.id == 1104)
+                                        {
+
+                                        }
+                                    }
+                                }
+                                else
+                                {//弃牌阶段，执行弃牌效果
+                                    GameObject tipPanel = this.GetComponentInParent<Canvas>().transform.Find("TipPanel").gameObject;
+                                    if (CardClickHandler.selectedCard == null)
+                                    {
+                                        tipPanel.SetActive(true);
+                                        TipPanel.Instance.SetLogText("未选择卡牌！");
+                                        return;
+                                    }
+                                    Germany.Instance.HandCards.RemoveAt(i);
+                                    Germany.Instance.DiscardPile.Add(card);
+                                    foldCardCount++;
+                                    //切换到下一阶段
+                                    //RoundManager.Instance.Statetransition();
+                                }
+                                break;
                             }
-                            else if (card.type == "对策卡")
-                            {
-                                Germany.Instance.HandCards.RemoveAt(i);
-                                Germany.Instance.CountermeasuresCards.Add(card);
-                            }
-                            else
-                            {
-                                Germany.Instance.HandCards.RemoveAt(i);
-                                Germany.Instance.DiscardPile.Add(card);
-                            }
-                            break;
                         }
                     }
                     break;
@@ -311,22 +398,25 @@ public class PlayPanel : MonoBehaviour
                         for (int i = Japan.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
                             Card card = Japan.Instance.HandCards[i];
-                            if (card.type == "状态卡")
+                            if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
                             {
-                                Japan.Instance.HandCards.RemoveAt(i);
-                                Japan.Instance.StatusCards.Add(card);
+                                if (card.type == "状态卡")
+                                {
+                                    Japan.Instance.HandCards.RemoveAt(i);
+                                    Japan.Instance.StatusCards.Add(card);
+                                }
+                                else if (card.type == "对策卡")
+                                {
+                                    Japan.Instance.HandCards.RemoveAt(i);
+                                    Japan.Instance.CountermeasuresCards.Add(card);
+                                }
+                                else
+                                {
+                                    Japan.Instance.HandCards.RemoveAt(i);
+                                    Japan.Instance.DiscardPile.Add(card);
+                                }
+                                break;
                             }
-                            else if (card.type == "对策卡")
-                            {
-                                Japan.Instance.HandCards.RemoveAt(i);
-                                Japan.Instance.CountermeasuresCards.Add(card);
-                            }
-                            else
-                            {
-                                Japan.Instance.HandCards.RemoveAt(i);
-                                Japan.Instance.DiscardPile.Add(card);
-                            }
-                            break;
                         }
                     }
                     break;
@@ -335,22 +425,25 @@ public class PlayPanel : MonoBehaviour
                         for (int i = Italy.Instance.HandCards.Count - 1; i >= 0; i--)
                         {
                             Card card = Italy.Instance.HandCards[i];
-                            if (card.type == "状态卡")
+                            if (card.cardName == CardClickHandler.selectedCard.gameObject.name)
                             {
-                                Italy.Instance.HandCards.RemoveAt(i);
-                                Italy.Instance.StatusCards.Add(card);
+                                if (card.type == "状态卡")
+                                {
+                                    Italy.Instance.HandCards.RemoveAt(i);
+                                    Italy.Instance.StatusCards.Add(card);
+                                }
+                                else if (card.type == "对策卡")
+                                {
+                                    Italy.Instance.HandCards.RemoveAt(i);
+                                    Italy.Instance.CountermeasuresCards.Add(card);
+                                }
+                                else
+                                {
+                                    Italy.Instance.HandCards.RemoveAt(i);
+                                    Italy.Instance.DiscardPile.Add(card);
+                                }
+                                break;
                             }
-                            else if (card.type == "对策卡")
-                            {
-                                Italy.Instance.HandCards.RemoveAt(i);
-                                Italy.Instance.CountermeasuresCards.Add(card);
-                            }
-                            else
-                            {
-                                Italy.Instance.HandCards.RemoveAt(i);
-                                Italy.Instance.DiscardPile.Add(card);
-                            }
-                            break;
                         }
                     }
                     break;
@@ -363,11 +456,30 @@ public class PlayPanel : MonoBehaviour
         }
     }
 
+    public void OnClickFinishFoldCardButton()
+    {
+        if (foldCardCount > 0)
+            foldCardCount = 0;
+        else
+        {
+            if (RoundManager.Instance.returnCurCampName() == "Axis")
+            {
+                ScoreManager.Instance.AddAxisScore(-1);
+            }
+            else
+            {
+                ScoreManager.Instance.AddAlliesScore(-1);
+            }
+        }
+        RoundManager.Instance.Statetransition();
+    }
+
     public void OnClickViewStatusCountermeasuresCardButton()
     {
         this.GetComponentInParent<Canvas>().transform.Find("StatusCardAndCountermeasuresCardPanel").gameObject.SetActive(true);
         this.gameObject.SetActive(false);
     }
+
     public void OnClickViewOtherStatusCardButton()
     {
         GameObject panel = this.GetComponentInParent<Canvas>().transform.Find("StatusCardPanel").gameObject;

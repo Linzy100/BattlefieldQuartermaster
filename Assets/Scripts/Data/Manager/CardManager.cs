@@ -550,24 +550,296 @@ public class CardManager : Singleton<CardManager>
     // Start is called before the first frame update
     void Awake()
     {
+        #region
+        card1101 = new Card1101();
+        card1102 = new Card1102();
+        card1103 = new Card1103();
+        card1104 = new Card1104();
+        card1201 = new Card1201();
+        card1202 = new Card1202();
+        card1203 = new Card1203();
+        card1204 = new Card1204();
+        card1205 = new Card1205();
+        card1206 = new Card1206();
+        card1301 = new Card1301();
+        card1302 = new Card1302();
+        card1303 = new Card1303();
+        card1304 = new Card1304();
+        card1305 = new Card1305();
+        card1306 = new Card1306();
+        card1307 = new Card1307();
+        card1308 = new Card1308();
+        card1309 = new Card1309();
+        card1310 = new Card1310();
+        card1311 = new Card1311();
+        card1312 = new Card1312();
+        card1501 = new Card1501();
+        card1502 = new Card1502();
+        card1503 = new Card1503();
+        card1504 = new Card1504();
+        card1505 = new Card1505();
+        card1506 = new Card1506();
+
+        card2101 = new Card2101();
+        card2102 = new Card2102();
+        card2103 = new Card2103();
+        card2104 = new Card2104();
+        card2201 = new Card2201();
+        card2202 = new Card2202();
+        card2203 = new Card2203();
+        card2204 = new Card2204();
+        card2205 = new Card2205();
+        card2301 = new Card2301();
+        card2302 = new Card2302();
+        card2303 = new Card2303();
+        card2304 = new Card2304();
+        card2305 = new Card2305();
+        card2401 = new Card2401();
+        card2402 = new Card2402();
+        card2403 = new Card2403();
+        card2404 = new Card2404();
+        card2405 = new Card2405();
+        card2406 = new Card2406();
+        card2407 = new Card2407();
+        card2501 = new Card2501();
+        card2502 = new Card2502();
+
+        card3101 = new Card3101();
+        card3102 = new Card3102();
+        card3103 = new Card3103();
+        card3104 = new Card3104();
+        card3301 = new Card3301();
+        card3302 = new Card3302();
+        card3303 = new Card3303();
+        card3304 = new Card3304();
+        card3401 = new Card3401();
+        card3402 = new Card3402();
+        card3403 = new Card3403();
+        card3404 = new Card3404();
+        card3405 = new Card3405();
+        card3406 = new Card3406();
+        card3407 = new Card3407();
+        card3408 = new Card3408();
+        card3409 = new Card3409();
+        card3410 = new Card3410();
+        card3411 = new Card3411();
+        card3501 = new Card3501();
+        card3502 = new Card3502();
+
+        card4101 = new Card4101();
+        card4102 = new Card4102();
+        card4103 = new Card4103();
+        card4104 = new Card4104();
+        card4201 = new Card4201();
+        card4202 = new Card4202();
+        card4203 = new Card4203();
+        card4204 = new Card4204();
+        card4205 = new Card4205();
+        card4206 = new Card4206();
+        card4301 = new Card4301();
+        card4302 = new Card4302();
+        card4303 = new Card4303();
+        card4304 = new Card4304();
+        card4305 = new Card4305();
+        card4306 = new Card4306();
+        card4401 = new Card4401();
+        card4402 = new Card4402();
+        card4403 = new Card4403();
+        card4404 = new Card4404();
+        card4405 = new Card4405();
+
+        card5101 = new Card5101();
+        card5102 = new Card5102();
+        card5103 = new Card5103();
+        card5104 = new Card5104();
+        card5201 = new Card5201();
+        card5202 = new Card5202();
+        card5203 = new Card5203();
+        card5204 = new Card5204();
+        card5205 = new Card5205();
+        card5206 = new Card5206();
+        card5301 = new Card5301();
+        card5302 = new Card5302();
+        card5304 = new Card5304();
+        card5305 = new Card5305();
+        card5401 = new Card5401();
+        card5402 = new Card5402();
+        card5403 = new Card5403();
+        card5404 = new Card5404();
+        card5501 = new Card5501();
+        card5502 = new Card5502();
+
+        card6101 = new Card6101();
+        card6102 = new Card6102();
+        card6103 = new Card6103();
+        card6104 = new Card6104();
+        card6201 = new Card6201();
+        card6202 = new Card6202();
+        card6203 = new Card6203();
+        card6204 = new Card6204();
+        card6205 = new Card6205();
+        card6206 = new Card6206();
+        card6207 = new Card6207();
+        card6208 = new Card6208();
+        card6209 = new Card6209();
+        card6301 = new Card6301();
+        card6302 = new Card6302();
+        card6303 = new Card6303();
+        card6304 = new Card6304();
+        card6305 = new Card6305();
+        card6306 = new Card6306();
+        card6307 = new Card6307();
+        card6501 = new Card6501();
+        card6502 = new Card6502();
+        card6503 = new Card6503();
+        card6504 = new Card6504();
+        card6505 = new Card6505();
+        #endregion
         AddCardsToList();
     }
 
     public void AddCardsToList()
     {
-        foreach (var field in GetType().GetFields())
-        {
-            if (field.FieldType.IsSubclassOf(typeof(Card)))
-            {
-                Card card = (Card)field.GetValue(this);
-                if (card != null)
-                {
-                    cardList.Add(card);
-                    Debug.Log($"Added card: {card.cardName}");
-                }
-            }
-        }
+        cardList.Add(card1101);
+        cardList.Add(card1102);
+        cardList.Add(card1103);
+        cardList.Add(card1104);
+        cardList.Add(card1201);
+        cardList.Add(card1202);
+        cardList.Add(card1203);
+        cardList.Add(card1204);
+        cardList.Add(card1205);
+        cardList.Add(card1206);
+        cardList.Add(card1301);
+        cardList.Add(card1302);
+        cardList.Add(card1303);
+        cardList.Add(card1304);
+        cardList.Add(card1305);
+        cardList.Add(card1306);
+        cardList.Add(card1307);
+        cardList.Add(card1308);
+        cardList.Add(card1309);
+        cardList.Add(card1310);
+        cardList.Add(card1311);
+        cardList.Add(card1312);
+        cardList.Add(card1501);
+        cardList.Add(card1502);
+        cardList.Add(card1503);
+        cardList.Add(card1504);
+        cardList.Add(card1505);
+        cardList.Add(card1506);
+        cardList.Add(card2101);
+        cardList.Add(card2102);
+        cardList.Add(card2103);
+        cardList.Add(card2104);
+        cardList.Add(card2201);
+        cardList.Add(card2202);
+        cardList.Add(card2203);
+        cardList.Add(card2204);
+        cardList.Add(card2205);
+        cardList.Add(card2301);
+        cardList.Add(card2302);
+        cardList.Add(card2303);
+        cardList.Add(card2304);
+        cardList.Add(card2305);
+        cardList.Add(card2401);
+        cardList.Add(card2402);
+        cardList.Add(card2403);
+        cardList.Add(card2404);
+        cardList.Add(card2405);
+        cardList.Add(card2406);
+        cardList.Add(card2407);
+        cardList.Add(card2501);
+        cardList.Add(card2502);
+        cardList.Add(card3101);
+        cardList.Add(card3102);
+        cardList.Add(card3103);
+        cardList.Add(card3104);
+        cardList.Add(card3301);
+        cardList.Add(card3302);
+        cardList.Add(card3303);
+        cardList.Add(card3304);
+        cardList.Add(card3401);
+        cardList.Add(card3402);
+        cardList.Add(card3403);
+        cardList.Add(card3404);
+        cardList.Add(card3405);
+        cardList.Add(card3406);
+        cardList.Add(card3407);
+        cardList.Add(card3408);
+        cardList.Add(card3409);
+        cardList.Add(card3410);
+        cardList.Add(card3411);
+        cardList.Add(card3501);
+        cardList.Add(card3502);
+        cardList.Add(card4101);
+        cardList.Add(card4102);
+        cardList.Add(card4103);
+        cardList.Add(card4104);
+        cardList.Add(card4201);
+        cardList.Add(card4202);
+        cardList.Add(card4203);
+        cardList.Add(card4204);
+        cardList.Add(card4205);
+        cardList.Add(card4206);
+        cardList.Add(card4301);
+        cardList.Add(card4302);
+        cardList.Add(card4303);
+        cardList.Add(card4304);
+        cardList.Add(card4305);
+        cardList.Add(card4306);
+        cardList.Add(card4401);
+        cardList.Add(card4402);
+        cardList.Add(card4403);
+        cardList.Add(card4404);
+        cardList.Add(card4405);
+        cardList.Add(card5101);
+        cardList.Add(card5102);
+        cardList.Add(card5103);
+        cardList.Add(card5104);
+        cardList.Add(card5201);
+        cardList.Add(card5202);
+        cardList.Add(card5203);
+        cardList.Add(card5204);
+        cardList.Add(card5205);
+        cardList.Add(card5206);
+        cardList.Add(card5301);
+        cardList.Add(card5302);
+        cardList.Add(card5304);
+        cardList.Add(card5305);
+        cardList.Add(card5401);
+        cardList.Add(card5402);
+        cardList.Add(card5403);
+        cardList.Add(card5404);
+        cardList.Add(card5501);
+        cardList.Add(card5502);
+        cardList.Add(card6101);
+        cardList.Add(card6102);
+        cardList.Add(card6103);
+        cardList.Add(card6104);
+        cardList.Add(card6201);
+        cardList.Add(card6202);
+        cardList.Add(card6203);
+        cardList.Add(card6204);
+        cardList.Add(card6205);
+        cardList.Add(card6206);
+        cardList.Add(card6207);
+        cardList.Add(card6208);
+        cardList.Add(card6209);
+        cardList.Add(card6301);
+        cardList.Add(card6302);
+        cardList.Add(card6303);
+        cardList.Add(card6304);
+        cardList.Add(card6305);
+        cardList.Add(card6306);
+        cardList.Add(card6307);
+        cardList.Add(card6501);
+        cardList.Add(card6502);
+        cardList.Add(card6503);
+        cardList.Add(card6504);
+        cardList.Add(card6505);
     }
+
 
     public void GetHandCardtoSeven(string country)
     {
@@ -677,9 +949,16 @@ public class CardManager : Singleton<CardManager>
 
     }
 
-    public Card GetCardByIdName(string cardName)    //Ñ°ÕÒÄ³¸ö¿¨ÅÆ
+    public Card GetCardById(int id) //¸ù¾Ý¿¨ÅÆidÕÒµ½¿¨ÅÆ
     {
-        return cardList.Find(card => card.cardName == cardName);
+        for (int index = 0; index < cardList.Count; index++)
+        {
+            if (cardList[index].id == id)
+            {
+                return cardList[index];
+            }
+        }
+        return null;
     }
 
 
